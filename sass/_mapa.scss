@@ -1,0 +1,25 @@
+.mapas {
+    width      : 98%;
+    max-width  : 1100px;
+    margin     : auto;
+    padding-top: 45px;
+    display    : flex;
+    font-family: 'Aspira';
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     width: 88%;
+            }
+    #gmap_canvas,
+    .mapas_desc {
+        margin: 0 0 20px;
+        p {
+            margin: 8px 0;
+        }
+    }
+    #gmap_canvas {
+        width : 100%;
+        height: 500px;
+         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     height : 300px;
+            }
+    }
+}
