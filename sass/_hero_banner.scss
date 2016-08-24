@@ -1,84 +1,90 @@
 div.hero-banner {
-    background-image: url("../images/inicio_cefaleas.png"); //Isotipo blanco
+    background-image   : url("../images/inicio_cefaleas.png"); //Isotipo blanco
     background-position: center center;
-    background-size: cover;
-    background-color: white;
-	margin: auto;
-    width: 100%;
-    max-width: 1280px;
-    height: 791px;
+    background-size    : cover;
+    background-color   : white;
+    margin             : auto;
+    width              : 100%;
+    max-width          : 1280px;
+    height             : 791px;
     div.upper-side {
-    	width: 100%;
-    	height: 100%;
-    	max-height: 200px;
-	    padding-top: 70px;
-    	div.centro-color {
-			background-color: $color_centro;		//Color de centro
-			float: left;
-			width: 50%;
-			max-width: 350px;
-			height: 100%;
-			text-align: right;
-			span {
-			    display: inline-block;
-			    height: 100%;
-			    vertical-align: middle;
-			}
-			img {
-				vertical-align: middle;
-				padding: 30px;
-				max-height: 125px;
-				max-width: 125px;
-			}
-		}
-		div.centro-titulo {
-			float: right;
-			display: table;
-			margin-right: 70px;						//Margen de toda la página
-			height: 100%;
-			p {
-				display: table-cell;
-				vertical-align: middle;
-				margin: 0;
-				text-align: right;
-		    	font-family: Aspira;
-		    	font-weight: 400;
-		    	font-style: italic;
-				font-size: 2.45rem;
-				span {
-					color: $color_centro;			//Color de centro
-			    	font-family: big-caslon-medium;
-			    	font-weight: 300;
-			    	font-style: normal;
-					font-size: 3.2rem;
-					&.extra {
-						color: $color_centro_2;		//Color de centro 2
-					}
-				}
-			}
-		}
+        width      : 100%;
+        height     : 100%;
+        max-height : 200px;
+        padding-top: 70px;
+        div.centro-color {
+            background-color: $color_centro;
+            //Color de centro
+            float           : left;
+            width           : 50%;
+            max-width       : 350px;
+            height          : 100%;
+            text-align      : right;
+            span {
+                display       : inline-block;
+                height        : 100%;
+                vertical-align: middle;
+            }
+            img {
+                vertical-align: middle;
+                padding       : 30px;
+                max-height    : 125px;
+                max-width     : 125px;
+            }
+        }
+        div.centro-titulo {
+            float       : right;
+            display     : table;
+            margin-right: 70px;
+            //Margen de toda la página
+            height      : 100%;
+            p {
+                display       : table-cell;
+                vertical-align: middle;
+                margin        : 0;
+                text-align    : right;
+                font-family   : Aspira;
+                font-weight   : 400;
+                font-style    : italic;
+                font-size     : 2.45rem;
+                span {
+                    color      : $color_centro;
+                    //Color de centro
+                    font-family: big-caslon-medium;
+                    font-weight: 300;
+                    font-style : normal;
+                    font-size  : 3.2rem;
+                    &.extra {
+                        color: $color_centro_2;
+                        //Color de centro 2
+                    }
+                }
+            }
+        }
     }
-	div.centro-menu {
-		margin-left: 70px;							//Margen de toda la página
-		width: 20%;
-		ul {
-			padding: 0;
-			margin: 1em 0;
-	    	list-style-type: none;
-	    	font-family: Aspira;
-	    	font-weight: 400;
-	    	font-style: italic;
-	    	font-size: 1.6rem;
-	    	li {
-		    	padding: 5px;
-		    	a {
-		    		text-decoration: none;
-    				color: $gris_oscuro;			//Color de fuente
-    				&:hover {
-    					font-size: 125%;
-    				}
-		    	}
-	    	}
-		}
-	}
+    div.centro-menu {
+        margin-left: 70px;
+        //Margen de toda la página
+        width      : 20%;
+        ul {
+            padding        : 0;
+            margin         : 1em 0;
+            list-style-type: none;
+            font-family    : Aspira;
+            font-weight    : 400;
+            font-style     : italic;
+            font-size      : 1.6rem;
+            li {
+                padding: 5px;
+                a {
+                    text-decoration: none;
+                    color          : $gris_oscuro;
+                    //Color de fuente
+                    &:hover {
+                        font-size: 125%;
+                    }
+                }
+            }
+        }
+    }
 }

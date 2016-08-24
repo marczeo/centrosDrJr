@@ -1,12 +1,13 @@
-////////////////////////////////////////////////////
 @import "vars";
 @import "hero_banner";
 @import "contacto";
 @import "mapa";
-////////////////////////////////////////////////////
-html{
+html {
 	font-size: 16px;
 }
+*{
+	box-sizing: border-box;
+}
 body {
-
+	margin: 0;
 }
