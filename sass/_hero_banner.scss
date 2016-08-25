@@ -13,8 +13,7 @@ div.hero-banner {
         max-height : 200px;
         padding-top: 70px;
         div.centro-color {
-            background-color: $color_centro;
-            //Color de centro
+            //Color fondo de centro
             float           : left;
             width           : 50%;
             max-width       : 350px;
@@ -48,16 +47,11 @@ div.hero-banner {
                 font-style    : italic;
                 font-size     : 2.45rem;
                 span {
-                    color      : $color_centro;
                     //Color de centro
                     font-family: big-caslon-medium;
                     font-weight: 300;
                     font-style : normal;
                     font-size  : 3.2rem;
-                    &.extra {
-                        color: $color_centro_2;
-                        //Color de centro 2
-                    }
                 }
             }
         }
@@ -78,7 +72,7 @@ div.hero-banner {
                 padding: 5px;
                 a {
                     text-decoration: none;
-                    color          : $gris_oscuro;
+                    color          : $gris_centros;
                     //Color de fuente
                     &:hover {
                         font-size: 125%;
