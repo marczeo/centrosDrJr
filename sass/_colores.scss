@@ -1,5 +1,6 @@
 // CLASES PARA COLORES DE CENTROS.
-//Hay dos clases, una para textos, otra para fondos. Negro y Gris son comunes para todos
+//Hay dos clases, una para textos, otra para fondos
+//Negro y Gris son comunes para todos, esos seguirán en _.vars.scss
 //CEFÁLEAS Y MIGRAÑAS
 .color-cefaleas-amarillo { color: rgba(210, 144, 50, 1); }
 .color-cefaleas-naranja { color: rgba(243, 110, 9, 1); }
@@ -37,9 +38,3 @@
 //VASCULAR CEREBRAL
 .color-cefaleas-rojo { color: rgba(166, 2, 45, 1); }
 .color-fondo-cefaleas-rojo { background-color: rgba(166, 2, 45, 1); }
-
-//NEGRO Y GRIS
-.color-centros-gris { color: rgba(152, 153, 155, 1); }
-.color-centros-negro { color: rgba(64, 65, 66, 1); }
-.color-fondo-centros-gris { background-color: rgba(152, 153, 155, 1); }
-.color-fondo-centros-negro { background-color: rgba(64, 65, 66, 1); }
