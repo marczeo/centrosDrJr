@@ -130,7 +130,7 @@ p.italico {
     font-family   : 'Aspira';
     display       : block;
     vertical-align: top;
-    float         : left;
+    max-width: 1280px;
     margin-top    : 30px;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
         padding-bottom: 30px;
@@ -268,9 +268,11 @@ p.italico {
     font-weight: 600;
 }
 footer {
-    display         : inline-block;
+    display         : block;
     width           : 100%;
     background-color: $ocre;
+    margin: auto;
+    max-width: 1280px;
     .copyright {
         font-family   : Caslon;
         color         : #ffffff;
@@ -290,6 +292,9 @@ footer {
         }
         @media screen and (max-width: $ipad_mediaquery - 1) {
             margin-top: 22px;
+        }
+        @media screen and (min-width: $over_mediaquery) {
+            left : 31%;
         }
         .font_change {
             font-family   : 'Aspira Light';
