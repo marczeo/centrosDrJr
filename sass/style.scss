@@ -12,3 +12,19 @@ html {
 body {
 	margin: 0;
 }
+.contenido {
+	background-color   : white;
+    margin             : auto;
+    width              : 100%;
+    max-width          : 1280px;
+	#contenido_down {
+		#contenido_contacto {
+			
+		}
+		#imagen_procedimiento {
+			width: 674px;
+			height: 473px;
+			background-image: url("../images/cefaleas/procedimientos_cefaleas.png");
+		}
+	}
+}
