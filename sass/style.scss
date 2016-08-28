@@ -3,8 +3,9 @@
 @import "hero_banner";
 @import "contacto";
 @import "mapa";
-html {
+html, body {
 	font-size: 16px;
+	height: 100%;
 }
 *{
 	box-sizing: border-box;
