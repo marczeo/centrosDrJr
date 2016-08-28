@@ -17,7 +17,10 @@ $color-columna-gris : rgba(176, 178, 180, 1);
 .color-columna-gris { color: $color-columna-gris; }
 .color-fondo-columna-azul { background-color: $color-columna-azul; }
 .color-fondo-columna-gris { background-color: $color-columna-gris; }
-.hero-banner-columna-background{ background-image   : url("../images/columna/inicio_columna.png"); }
+.hero-banner-columna-background{ 
+	background-image   : url("../images/columna/inicio_columna_alta_calidad.png"); 
+	background-position: right center;
+}
 
 
 //NEUROCIRUGÍA PEDIÁTRICA
