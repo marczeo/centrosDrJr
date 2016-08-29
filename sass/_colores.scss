@@ -8,7 +8,10 @@
 .color-fondo-cefaleas-amarillo { background-color: rgba(210, 144, 50, 1); }
 .color-fondo-cefaleas-naranja { background-color: rgba(243, 110, 9, 1); }
 .color-fondo-cefaleas-menta { background-color: rgba(218, 241, 254, 1); }
-.hero-banner-cefaleas-background{ background-image   : url("../images/cefaleas/inicio_cefaleas.png"); }
+.hero-banner-cefaleas-background{ 
+	background-image   : url("../images/cefaleas/inicio_cefaleas.png"); 
+	background-position: center center;
+}
 
 //COLUMNA  VERTEBRAL
 $color-columna-azul : rgba(152, 171, 194, 1);
