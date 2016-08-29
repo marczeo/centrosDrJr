@@ -84,7 +84,6 @@
         }
     }
     .golden {
-        color         : #9e8629;
         font-family   : Caslon;
         font-size     : 2.1rem;
         letter-spacing: 3px;
@@ -93,7 +92,6 @@
         }
     }
     .golden_medium {
-        color      : #9e8629;
         font-family: Aspira;
         font-size  : 20pt;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
@@ -171,7 +169,6 @@ p.italico {
         width         : 100%;
         padding       : 10px;
         margin        : 10px 0;
-        border-left   : solid 5px $ocre;
         border-bottom : none;
         border-Top    : none;
         border-right  : none;
@@ -206,7 +203,6 @@ p.italico {
         border    : none;
         color     : white;
         text-align: center;
-        background: $ocre;
         height    : 50px;
         @media screen and (max-width: $ipad_mediaquery - 1) {
             height        : 56px;
@@ -270,7 +266,6 @@ p.italico {
 footer {
     display         : block;
     width           : 100%;
-    background-color: $ocre;
     margin: auto;
     max-width: 1280px;
     .copyright {
@@ -339,7 +334,6 @@ footer {
         width   : 40%;
         height  : auto;
         margin  : auto;
-        fill    : $ocre;
         position: relative;
         top     : 30%;
         @media screen and (min-width: 550px) {}
@@ -348,7 +342,6 @@ footer {
 #cerebro {
     fill-rule: evenodd;
     clip-rule: evenodd;
-    fill     : #9e8629;
 }
 .payments {
     text-align : center;
@@ -382,4 +375,29 @@ footer {
         float      : none;
         margin-left: 0;
     }
+}
+.neurocirugia-button{
+        background: rgba(150, 189, 14, 1);
+}
+.neurocirugia-border-item{
+    border-left   : solid 5px rgba(150, 189, 14, 1);
+}
+.neurocirugia-texto{
+    color: rgba(150, 189, 14, 1);
+}
+.neurocirugia-border-color{
+    border-color:  rgba(150, 189, 14, 1);
+}
+.neurocirugia-cerebro-fill{
+    svg{
+        fill: $gris_centros;
+    }
+}
+.neurocirugia-logo-footer{
+    svg{
+        fill    : rgba(150, 189, 14, 1);
+    }
+}
+.neurocirugia-footer{
+    background-color: rgba(150, 189, 14, 1);
 }
