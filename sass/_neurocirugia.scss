@@ -69,4 +69,42 @@
 			    }
 		}
 	}
+	.tumores{
+			    display: flex;
+   				position: relative;
+   				img{
+   					width: 35%;
+				    top: -90px;
+				    position: absolute;
+   				}
+   				.pediatricos{
+   					margin-left: 59%;
+   					.title{
+   						text-align: center;
+						position: relative;
+						font-family: Big Caslon Medium;
+						font-size: 6vw;
+						color: $gris_centros;
+						margin-top: 50px;
+		    			margin-bottom: 100px;
+
+						&:before{
+								content: "";
+							    position: absolute;
+							    left : 135px;
+							    top: 50%;
+							    transform: translateY(-50%);
+							    width: 7px;
+							    height: 67%;
+								background: rgba(150, 189, 14, 1);
+								transition:ease 1s;
+							}
+						&:hover{
+							&:before{
+								left:80%;
+							}
+						}
+   					}
+   				}
+		}
 }
