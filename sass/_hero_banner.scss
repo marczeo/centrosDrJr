@@ -37,6 +37,7 @@ div.hero-banner {
             //Margen de toda la página
             height      : 100%;
             p {
+                color         : rgba(87, 89, 90, 1);
                 display       : table-cell;
                 vertical-align: middle;
                 margin        : 0;
@@ -79,5 +80,11 @@ div.hero-banner {
                 }
             }
         }
+    }
+    div.imagen-titulo{
+        position: absolute;
+        bottom: 2vw;
+        align-items: right;
+        right: 70px;
     }
 }
