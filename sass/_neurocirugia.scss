@@ -1,0 +1,110 @@
+.primera-parte{
+	max-width: 1280px;
+    margin: auto;
+    width: 100%;
+	.que-es{
+		display: flex;
+		position: relative;
+	    background: url("../images/Texturas/marmol_small.png");
+		.texto-que-es{
+			float: left;
+			width: 50%;
+			.title{
+				text-align: center;
+				position: relative;
+				font-family: Big Caslon Medium;
+				font-size: 6vw;
+				color: $gris_centros;
+				margin-top: 50px;
+    			margin-bottom: 100px;
+
+				&:before{
+						content: "";
+					    position: absolute;
+					    left : 135px;
+					    top: 50%;
+					    transform: translateY(-50%);
+					    width: 7px;
+					    height: 67%;
+						background: rgba(150, 189, 14, 1);
+						transition:ease 1s;
+					}
+				&:hover{
+					&:before{
+						left:80%;
+					}
+				}
+			}
+			.texto{
+				display: block;
+				font-family: Aspira;
+				font-size: 16pt;
+				margin-left: 70px;
+				margin-right: 70px;
+				line-height: 1.4;
+				&:after{
+					content: '';
+				    display: block;
+				    height: 3px;
+				    width: 50px;
+				    background: $gris_centros ;
+				    margin-top: 30px;
+				    margin-bottom: 50px;
+				}
+			}
+		}
+		.logo-drjr{
+			        display: flex;
+				    float: right;
+				    background-color: #d9e583;
+				    width: 50%;
+				    text-align: center;
+			    svg{
+			    	width: 8%;
+				    height: auto;
+				    margin: auto;
+				    fill: #9e8629;
+				    position: relative;
+				    top: 30%;
+			    }
+		}
+	}
+	.tumores{
+			    display: flex;
+   				position: relative;
+   				img{
+   					width: 35%;
+				    top: -90px;
+				    position: absolute;
+   				}
+   				.pediatricos{
+   					margin-left: 59%;
+   					.title{
+   						text-align: center;
+						position: relative;
+						font-family: Big Caslon Medium;
+						font-size: 6vw;
+						color: $gris_centros;
+						margin-top: 50px;
+		    			margin-bottom: 100px;
+
+						&:before{
+								content: "";
+							    position: absolute;
+							    left : 135px;
+							    top: 50%;
+							    transform: translateY(-50%);
+							    width: 7px;
+							    height: 67%;
+								background: rgba(150, 189, 14, 1);
+								transition:ease 1s;
+							}
+						&:hover{
+							&:before{
+								left:80%;
+							}
+						}
+   					}
+   				}
+		}
+}
