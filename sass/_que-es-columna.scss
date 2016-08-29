@@ -1,0 +1,43 @@
+.container{
+	/*Es importante que el padre tenga una posicion relativa para que esto funcione bien*/
+	position:relative;
+	width:100%;
+	height:500px;
+	max-width: 1280px;
+	margin: auto;
+	/*background:$color-columna-azul;*/
+	.center{
+		/*La posicion absoluta no respeta los elementos del contenedor hasta que encuentra una posicion relativa.*/
+		position:absolute;
+		padding:20px;
+		border-radius:10px;
+		/*manda 50% del contenedor la esquina superior izquierda.*/
+		top:50%;
+		left:50%;
+		/*devuelve el 50% de la medida del elemento*/
+		transform:translate(-50%,-50%);
+		-webkit-transform:translate(-50%,-50%);
+		-ms-transform:translate(-50%,-50%);
+		background:$color-columna-gris;
+		p{
+			color:white;
+			font-family:"Denk One";
+		}
+		img{
+			width: 150px;
+		}
+	}
+	.col-2{	
+        float   : left;
+        display : inline-block;
+        width   : 45%;
+        margin  : 0 1%;
+        overflow: auto;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
