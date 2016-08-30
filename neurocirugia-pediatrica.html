@@ -10,10 +10,28 @@
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9YJqQkJ4-FPQB9T7pfc90Hfe6JwQLRo'></script>
         <script src="js/maps.js" charset="utf-8"></script>
         <script src="js/main.js" charset="utf-8"></script>
+        <script src="js/navbar.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
   </head>
 
   <body>
+  <div class="navbar" style="display : none;">
+  <div class="navbar-fixed">
+      <div class="f-navbar">
+        <img src="images\burger_icon.png" id="burger">
+      </div>
+      <div class="navbar-options" style="display : none;">
+      <div class="element">
+            <ul class="menu">
+                        <li> <a  href="#que-es"><span class="font-change">¿Qué es? </span></a> </li>
+                        <li> <a  href="#tumores">Tumores Pediátricos </a> </li>
+                        <li> <a  href="#cirugias">Cirugías</a> </li>
+                        <li> <a  href="#contacto">Contacto </a> </li>
+                        </ul>
+        </div>
+      </div>
+      </div>
+  </div>
     <div class="hero-banner hero-banner-neurocirugia-background">               <!-- Hero Banner inicia-->
     <div class="imagen-titulo">
         <img src="images\neurocirugia\logotipo_neurocirugia_pediatrica.png">
@@ -33,15 +51,16 @@
         </div>
         <div class="centro-menu">             <!-- Segunda línea -->
             <ul>
-                <li> <a  href="#">¿Qué es? </a> </li>
-                <li> <a  href="#">Tumores Pediátricos </a> </li>
-                <li> <a  href="#">Cirugías</a> </li>
-                <li> <a  href="#">Contacto </a> </li>
+                <li> <a  href="#que-es">¿Qué es? </a> </li>
+                <li> <a  href="#tumores">Tumores Pediátricos </a> </li>
+                <li> <a  href="#cirugias">Cirugías</a> </li>
+                <li> <a  href="#contacto">Contacto </a> </li>
             </ul>
         </div>
     </div>                                  <!-- Hero Banner termina-->
-    <div class="primera-parte">
+    <div class="primera-parte" id="limit">
         <div class="que-es">
+        <a name="que-es"></a>
             <div class="texto-que-es">
                 <div class="title" onclick="slide_section('texto');">¿Qué es?</div>
                 <span class="texto" id="texto"  style="display: none;">
@@ -60,6 +79,7 @@
         <div class="tumores">
             <img src="images/neurocirugia/que_es_neurocirugia.png" alt="">
             <div class="pediatricos">
+            <a name="tumores"></a>
                 <div class="title" onclick="slide_section('texto_tumores');">
                     Tumores <br>Pediátricos
                 </div>
@@ -79,10 +99,12 @@
     </div>
                                 <!--    Cirugias  -->    
     <div class="cirugias">
+    <a name="cirugias"></a>
         <div class="left-cirugia">
             <div class="title" onclick="slide_cirugia_pediatrica('contenido-cirugias');">Cirugías</div>
             <div class="ribbon"></div>
             <div class="icon"><img src="images/neurocirugia/isotipo_neurocirugia_pediatrica.png" alt="" /></div>
+            
             <div class="title-background">
                 <div class="title-white">Contacto</div>
             </div>
@@ -135,6 +157,7 @@
             </div>
         </div>
     </div>
+    <a name="contacto"></a>
     <div class="contacto-50" style="display : none;">
     <div class="title-background-50">
                 <div class="title-white">Contacto</div>
