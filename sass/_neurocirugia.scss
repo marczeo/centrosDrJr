@@ -258,6 +258,14 @@
 						left:30%;
 					}
 				}
+			.bold{
+					font-family: Aspira;
+				}
+			img{
+				position: absolute;
+			    top: 100px;
+			    left: 450px;
+			}
 		}
 		.contenido-epilepsia{
 			width: 50%;
@@ -296,11 +304,16 @@
 						}
 					&:hover{
 						&:before{
-							right:50%;
+							right:40%;
 						}
 					}
 				img{
-					width: 100%;
+					position: absolute;
+				    right: 620px;
+				    top: 90px;
+				}
+				.bold{
+					font-family: Aspira;
 				}
 
 			}
