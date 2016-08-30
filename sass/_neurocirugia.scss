@@ -131,7 +131,7 @@
 		    background: rgba(150, 189, 14, 1); ;
 			}
 
-	.left{
+	.left-cirugia{
 		width: 50%;
 		float: left;
 		.title{
@@ -205,12 +205,13 @@
 		}
 		}
 	}
-	.right{
+	.right-cirugia{
 		width: 50%;
 		float: right;
-		img{
-			height: 757px;
-		}
+		background-image: url("../images/neurocirugia/cirugias_neurocirugia_pediatrica.png");
+		background-size: 100% 100%;
+	    height: 757px;
+	    display: flex;
 	}
 }
 .contenido-cirugias{
@@ -344,3 +345,39 @@
 		}
 	}
 }
+.contacto-50{
+	width: 100%;
+	max-width: 1280px;
+	margin : auto;
+.title-background-50{
+			width: 50%;
+			max-width: 1280px;
+			background-color: rgba(217, 229, 131, 1);
+			padding-bottom: 30px;
+    		padding-top: 30px;
+			.title-white{
+			text-align: center;
+				position: relative;
+				font-family: Big Caslon Medium;
+				font-size: 60pt;
+				color: #FFFFFF;
+
+				&:before{
+						content: "";
+					    position: absolute;
+					    left : 135px;
+					    top: 50%;
+					    transform: translateY(-50%);
+					    width: 7px;
+					    height: 67%;
+						background: #FFFFFF;
+						transition:ease 1s;
+					}
+				&:hover{
+					&:before{
+						left:80%;
+					}
+				}
+		}
+		}
+	}
