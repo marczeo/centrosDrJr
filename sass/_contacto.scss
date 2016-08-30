@@ -342,12 +342,13 @@ footer {
 #cerebro {
     fill-rule: evenodd;
     clip-rule: evenodd;
+    fill     : $gris_centros;
 }
 .payments {
     text-align : center;
     display    : inline-block;
     margin-top : 3%;
-    margin-left: 4%;
+    margin-left: 70px;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
         font-size  : 10pt;
         font-family: Aspira Regular;
@@ -376,6 +377,7 @@ footer {
         margin-left: 0;
     }
 }
+////////////////////////////////////////////////////
 .neurocirugia-button{
         background: rgba(150, 189, 14, 1);
 }
