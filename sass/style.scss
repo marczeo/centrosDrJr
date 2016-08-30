@@ -3,8 +3,13 @@
 @import "hero_banner";
 @import "contacto";
 @import "mapa";
-html {
+@import "fonts";
+@import "que-es-columna";
+@import "neurocirugia";
+@import "grid-system";
+html, body {
 	font-size: 16px;
+	height: 100%;
 }
 *{
 	box-sizing: border-box;
