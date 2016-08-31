@@ -81,15 +81,15 @@
             }
     	}
     }
-    #procedimientos_hidden {
+    #cirugias_hidden {
     	display: none;
     	border-top : 6px solid $color-vascular-rojo;
-	    #contenido_procedimientos {
+	    .contenido_cirugias {
 	    	display: flex;
 	    	position: relative;
 	    	width: 100%;
 			padding: 35px 0 35px 0;
-			#isotipo_procedimientos {
+			#isotipo_cirugias {
 				float: left;
 			    margin: auto;
 			    text-align: center;
@@ -99,8 +99,8 @@
 				    vertical-align: middle;
 			    }
 			}
-			#descripcion_procedimientos {
-			    float: right;
+			.descripcion_cirugias {
+			    float: left;
 			    width: 49%;
 				ul {
 					margin: 0;
@@ -108,6 +108,9 @@
 					font-style : normal;
 					font-size: 1.6rem;
 				}
+			}
+			.descripcion_cirugias_right {
+			    float: right; 
 			}
 	    }
 	}
@@ -135,7 +138,25 @@
 }
 
 .title_vascular{
+	p.italic {
+		display: inline-block;
+	    margin-left: 100px;
+	    text-align: left;
+	    font-family: Aspira;
+		font-size: 3.8rem;
+		font-weight: 300;
+		font-style : italic;
+	}
+	span {
+		color: rgba(94, 94, 94, 1);
+		font-weight: 700;
+	}
 	&:before{
 			background: $color-vascular-rojo;
+	}
+	&:hover{
+		&:before{
+			left: 95%;
 		}
+	}
 }
