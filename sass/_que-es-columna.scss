@@ -68,10 +68,9 @@
 	}
 }
 .columna-title{
-	@include setTitle("Big Caslon",6vw,regular, $gris_centros);
+	@include setTitle("Big Caslon",6rem,regular, $gris_centros);
 	color: $gris_centros;
-	padding-left: 10px;
-	
+		
 }
 .columna-que-es
 {
@@ -80,5 +79,11 @@
 	background: url("../images/Texturas/marmol_small.png");
 	img{
 		float: right;
+	}
+	p{
+		position: absolute;
+		top: 10%;
+		left: 0;
+		transform: translate(10%,50%);
 	}
 }
