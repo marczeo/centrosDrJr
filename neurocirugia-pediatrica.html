@@ -10,10 +10,28 @@
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9YJqQkJ4-FPQB9T7pfc90Hfe6JwQLRo'></script>
         <script src="js/maps.js" charset="utf-8"></script>
         <script src="js/main.js" charset="utf-8"></script>
+        <script src="js/navbar.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
   </head>
 
   <body>
+  <div class="navbar" style="display : none;">
+  <div class="navbar-fixed">
+      <div class="f-navbar">
+        <img src="images\burger_icon.png" id="burger">
+      </div>
+      <div class="navbar-options" style="display : none;">
+      <div class="element">
+            <ul class="menu">
+                        <li> <a  href="#que-es"><span class="font-change">¿Qué es? </span></a> </li>
+                        <li> <a  href="#tumores">Tumores Pediátricos </a> </li>
+                        <li> <a  href="#cirugias">Cirugías</a> </li>
+                        <li> <a  href="#contacto">Contacto </a> </li>
+                        </ul>
+        </div>
+      </div>
+      </div>
+  </div>
     <div class="hero-banner hero-banner-neurocirugia-background">               <!-- Hero Banner inicia-->
     <div class="imagen-titulo">
         <img src="images\neurocirugia\logotipo_neurocirugia_pediatrica.png">
@@ -33,15 +51,16 @@
         </div>
         <div class="centro-menu">             <!-- Segunda línea -->
             <ul>
-                <li> <a  href="#">¿Qué es? </a> </li>
-                <li> <a  href="#">Tumores Pediátricos </a> </li>
-                <li> <a  href="#">Cirugías</a> </li>
-                <li> <a  href="#">Contacto </a> </li>
+                <li> <a  href="#que-es">¿Qué es? </a> </li>
+                <li> <a  href="#tumores">Tumores Pediátricos </a> </li>
+                <li> <a  href="#cirugias">Cirugías</a> </li>
+                <li> <a  href="#contacto">Contacto </a> </li>
             </ul>
         </div>
     </div>                                  <!-- Hero Banner termina-->
-    <div class="primera-parte">
+    <div class="primera-parte" id="limit">
         <div class="que-es">
+        <a name="que-es"></a>
             <div class="texto-que-es">
                 <div class="title" onclick="slide_section('texto');">¿Qué es?</div>
                 <span class="texto" id="texto"  style="display: none;">
@@ -60,10 +79,11 @@
         <div class="tumores">
             <img src="images/neurocirugia/que_es_neurocirugia.png" alt="">
             <div class="pediatricos">
-                <div class="title">
-                    Tumores Pediátricos
+            <a name="tumores"></a>
+                <div class="title" onclick="slide_section('texto_tumores');">
+                    Tumores <br>Pediátricos
                 </div>
-                <span class="texto" id="texto_tumores">
+                <span class="texto" id="texto_tumores" style="display : none">
                     <ul>
                         <li>Gliomas ópticos e hipotalámicos</li>
                         <li>Tumor de células germinativas</li>
@@ -77,7 +97,72 @@
             </div>
         </div>
     </div>
-
+                                <!--    Cirugias  -->    
+    <div class="cirugias">
+    <a name="cirugias"></a>
+        <div class="left-cirugia">
+            <div class="title" onclick="slide_cirugia_pediatrica('contenido-cirugias');">Cirugías</div>
+            <div class="ribbon"></div>
+            <div class="icon"><img src="images/neurocirugia/isotipo_neurocirugia_pediatrica.png" alt="" /></div>
+            
+            <div class="title-background">
+                <div class="title-white">Contacto</div>
+            </div>
+        </div>
+        <div class="right-cirugia">
+           
+        </div>
+    </div>
+                                <!--    Contenido Cirugias -->
+    <div class="contenido-cirugias" id="contenido-cirugias" style="display: none;">
+        <div class="cirugia-epilepsia">
+            <div class="titulo-epilepsia">
+                <i>Cirugía de<br><strong><span class="bold">Epilepsia</strong></span></i>
+                <img src="images/neurocirugia/Flecha_D.png" alt="">
+            </div>
+            <div class="contenido-epilepsia">
+                <ul>
+                    <li>Callosotomía</li>
+                    <li>Amigdalohipocampectomía</li>
+                    <li>Lobectomía temporal medial anterior</li>
+                    <li>Estimulación del nervio vago</li>
+                    <li>Transección múltiple  subpial</li>
+                    <li>Disrafias espinales ocultas</li>
+                    <li>Síndrome craneofacial</li>
+                    <li>Anormalidades del desarrollo de la unión craneocervical</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cirugia-neuropediatrica">
+            <div class="header-neuropediatrica">
+                <img src="images/neurocirugia/cirugia_2.png" alt="">
+                <div class="titulo-neuropediatrica"><i>Cirugía<br><strong><span class="bold">Neuropediátrica</span></strong></i>
+                <img src="images/neurocirugia/Flecha.png" alt="">
+                </div>
+            </div>
+            <div class="contenido-neuropediatrica">
+                <ul class="ul-left">
+                    <li>Encefaloceles, mielomeningoceles, LPOS, médula anclada, Dandy-Walker, quistes aracnoideos. </li>
+                    <li>Craneosinostosis y malformaciones de Chiari </li>
+                    <li>Hidrocefaleas (Neonatales, pediátricas, infecciones)</li>
+                    <li>Malformaciones de vena de galeno, arteriovenosas y aneurismas</li>
+                </ul>
+                <ul class="ul-right">
+                    <li>Traumatismos</li>
+                    <li>Enfermedades de columna vertebral (disco, listesis, escoliosis y tumores) </li>
+                    <li>Tumores Neuroectodérmicos</li>
+                    <li>Tumores de Fosa Posterior (astrocitomas, mediloblastomas)</li>
+                    <li>Craneofaringeomas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a name="contacto"></a>
+    <div class="contacto-50" style="display : none;">
+    <div class="title-background-50">
+                <div class="title-white">Contacto</div>
+    </div>
+    </div>
                                 <!--    Contacto  -->
 
     <div class="contacto">
@@ -85,49 +170,49 @@
             <ul>
                 <li>
                     <!--<label for="contact-name"> </label>-->
-                    <input type="text" name="contact-responsible" placeholder="Nombre del responsable de este mensaje" required>
+                    <input type="text" name="contact-responsible"  class="neurocirugia-border-item" placeholder="Nombre del responsable de este mensaje" required>
                 </li>
                 <li>
                     <!--<label for="contact-name"> </label>-->
-                    <input type="text" name="contact-name" placeholder="Nombre del paciente" required>
+                    <input type="text" name="contact-name" class="neurocirugia-border-item" placeholder="Nombre del paciente" required>
                 </li>
                 <li>
                     <!-- <label for="contact-age">Edad/Antigüedad: </label> -->
-                    <input type="number" name="contact-age" min="0" id="age" max="200" placeholder="Edad" required>
+                    <input type="number" name="contact-age"  class="neurocirugia-border-item" min="0" id="age" max="200" placeholder="Edad" required>
                 </li>
                 <li>
                     <!-- <label for="contact-phone">Teléfono: </label> -->
-                    <input type="tel" id="contact-phone" name="contact-phone" id="phone" placeholder="Teléfono " required>
+                    <input type="tel" id="contact-phone" class="neurocirugia-border-item" name="contact-phone" id="phone" placeholder="Teléfono " required>
                 </li>
                 <li>
                     <!-- <label for="email-contact ">Correo electrónico: </label> -->
-                    <input type="email " name="email-contact " placeholder="Correo Electrónico " required>
+                    <input type="email " name="email-contact " class="neurocirugia-border-item" placeholder="Correo Electrónico " required>
                 </li>
                 <li>
                     <!--<label for="contact-name "> </label>-->
-                    <input type="text " name="contact-subject " placeholder="Asunto " required>
+                    <input type="text " name="contact-subject " class="neurocirugia-border-item" placeholder="Asunto " required>
                 </li>
                 <li>
                     <!-- <label for="contact-description ">Descripción del asunto: </label> -->
-                    <textarea name="contact-description " cols="50 " rows="6 " placeholder="Mensaje "></textarea>
+                    <textarea name="contact-description " class="neurocirugia-border-item" cols="50 " rows="6 " placeholder="Mensaje "></textarea>
                 </li>
                 <li>
-                    <button type="submit ">ENVIAR</button>
+                    <button type="submit " class="neurocirugia-button">ENVIAR</button>
                 </li>
             </ul>
         </form>
         <div class="address">
-            <div class="banner_logo ">
-                <object type="image/svg+xml" data="iconos/cerebro.svg">imagen de cerebro</object>
+            <div class="banner_logo neurocirugia-border-color ">
+                <object type="image/svg+xml" data="iconos/cerebro.svg" class="neurocirugia-cerebro-fill">imagen de cerebro</object>
             </div>
-            <p class="golden ">Torre Médica Providencia</p>
+            <p class="golden neurocirugia-texto">Torre Médica Providencia</p>
             <br>
             <p>
                 <strong>Pablo Neruda <i>#3265<br></i></strong>
                 Segundo piso, Consultorio 28<br>
                 Col. Providencia C.P. 44630
             </p>
-            <span class="golden_medium ">
+            <span class="golden_medium neurocirugia-texto">
                 <i>Guadalajara, Jalisco</i>
             </span>
             <p>juanmriestra@hotmail.com</p>
@@ -135,7 +220,7 @@
             <div class="banner_logo_ocre "> </div>
             <p>
                 Tel. &nbsp;<strong>33 3813 1360<br></strong>
-                <span class="golden reacomodo">Emergencias&nbsp;&nbsp;</span>(01) 33 3100 0260
+                <span class="golden reacomodo neurocirugia-texto">Emergencias&nbsp;&nbsp;</span>(01) 33 3100 0260
             </p>
         </div>
         <div class="mapas">
@@ -150,13 +235,13 @@
         </span>
     </div>
 
-    <footer>
+    <footer class="neurocirugia-footer">
         <span class="copyright">
             <span class="font_change">TODOS LOS DERECHOS RESERVADOS<br></span>
             <span class="firma">DR. JUAN MANUEL RIESTRA </span>
             <span style="font-family: 'Aspira';font-weight: lighter;letter-spacing: 2px;">2016</span>
         </span>
-        <div class="logo_footer">
+        <div class="logo_footer neurocirugia-logo-footer">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 647.3 647.3" xml:space="preserve">
                 <path d="M173 77.8c43.9-27 95.5-42.6 150.7-42.6 159.1 0 288.5 129.4 288.5 288.4 0 60.6-18.8 116.8-50.8 163.2 1.6 1.3 2.9 2.3 3.9 3 7.2 4.9 15.9 8.1 26 9.6 1.2 0.2 2.3 0.4 3.5 0.7 33.2-50.8 52.6-111.4 52.6-176.5C647.3 145.2 502.1 0 323.7 0c-80.3 0-153.8 29.4-210.4 78 1.6-0.1 3.1-0.2 4.7-0.2H173zM323.7 612.1c-15.7 0-31.1-1.3-46.1-3.7 -6.6 11.4-15 21.8-24.9 31 22.8 5.1 46.6 7.9 71 7.9 52.2 0 101.5-12.5 145.3-34.6 -18.1-1.8-32.6-8.9-44.9-18.7C392.8 605.7 358.9 612.1 323.7 612.1zM35.2 323.7c0-54.9 15.4-106.2 42.1-149.9 -8.5-9.6-13.6-22.2-13.6-36V132c0-0.3 0-0.6 0-1C23.7 184.9 0 251.5 0 323.7c0 73 24.3 140.4 65.2 194.6 10.3-6.9 21.8-11.6 33.9-13.8C59.2 455 35.2 392.1 35.2 323.7zM323.7 582.1c-11.5 0-22.8-0.8-34-2.3 -1.3 4.6-3 9.2-4.8 13.6 12.7 1.8 25.6 2.8 38.8 2.8 30.5 0 59.8-5.1 87.3-14.4 -3.4-3.7-6.7-7.5-9.8-11.5C376.7 577.9 350.6 582.1 323.7 582.1zM123.3 486.8C87 442.2 65.2 385.5 65.2 323.7c0-49 13.7-94.8 37.5-133.9 -4.6-1.3-8.9-3.3-13-5.7 -24.5 40.8-38.6 88.6-38.6 139.6 0 68.7 25.6 131.5 67.7 179.5 1.3 0.1 2.7 0.1 4 0.2C123.1 497.1 123.2 491.3 123.3 486.8zM323.7 65.2c142.5 0 258.5 115.9 258.5 258.4 0 51.7-15.3 99.9-41.6 140.3 3.4 4.5 6.5 8.3 9.4 11.5 29.3-43.4 46.3-95.7 46.3-151.9 0-150.3-122.3-272.5-272.5-272.5 -42 0-81.9 9.6-117.5 26.7h37.9C269.2 69.7 295.9 65.2 323.7 65.2z"
                 />

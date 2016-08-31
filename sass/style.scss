@@ -1,15 +1,19 @@
 @import "vars";
 @import "colores";
-@import "hero_banner";
+@import "cefaleas";
 @import "contacto";
-@import "mapa";
 @import "fonts";
-@import "que-es-columna";
-@import "neurocirugia";
 @import "grid-system";
+@import "hero_banner";
+@import "mapa";
+@import "neurocirugia";
+@import "que-es-columna";
+@import "navbar";
 html, body {
+	font-family: Aspira;
 	font-size: 16px;
 	height: 100%;
+	color: #403F41;
 }
 *{
 	box-sizing: border-box;

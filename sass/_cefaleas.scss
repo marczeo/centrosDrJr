@@ -1,0 +1,160 @@
+.contenido {
+	background-color   : white;
+    margin             : auto;
+    width              : 100%;
+    max-width          : 1280px;
+    #contenido_up {
+    	#que_es {
+	        width: 100%;
+		    display: -webkit-flex;
+		    display: flex;
+		    background-image: url("../images/texturas/marmol_small.png");
+		    background-position: center center;
+    		#parrafo {
+    			width: 50%;
+		    	padding-bottom: 180px;
+			    #titulo {
+    				margin: 0;
+    				p {
+    					margin: 40px 0 50px 0;
+    				}
+    				&:before {
+    					height: 80%;
+    					top: 60%;
+    				}
+    			}
+    			#texto {
+				    display: none;
+				    margin: -30px 30px 40px 70px;
+				    font-weight: 300;
+				    font-style: italic;
+				    font-size: 1.45rem;
+    			}
+    		}
+    		#pattern_logo {
+    			width: 50%;
+    			height: inherit;
+    			#pattern {
+    				width: 100%;
+    				height: 20%;
+    				background       : url('../images/pattern.png');
+    				background-repeat: repeat;
+    			}
+    			#svg_logo {
+				    display: flex;
+				    height: 80%;
+    				svg {
+					    margin: auto;
+    					width: 15%;
+    					fill: rgba(172, 228, 249, 1);
+    				}
+    			}
+    		}
+    	}
+    	#imagen_procedimiento_header {
+            width           : 100%;
+            max-width       : 1280px;
+            height          : 100%;
+            text-align      : left;
+            margin: -200px 0 0 0;
+            #titulo_procedimientos {
+            	width: 60%;
+            	vertical-align: bottom;
+            	&:before {
+            		top: 54%;
+            		height: 60%;
+            	}
+            	&:hover { &:before { left: 100%; }}
+            }
+            #imagen {
+            	width: 39%;
+            }
+            div {
+                display       : inline-block;
+                height        : 100%;
+                margin: 0;
+                p { margin: 0 0 0 100px;}
+            }
+            img {
+                vertical-align: middle;
+            }
+    	}
+    }
+    #procedimientos_hidden {
+    	display: none;
+    	border-top : 6px solid $color-cefaleas-amarillo;
+	    #contenido_procedimientos {
+	    	display: flex;
+	    	position: relative;
+	    	width: 100%;
+			padding: 35px 0 35px 0;
+			#isotipo_procedimientos {
+				float: left;
+			    margin: auto;
+			    text-align: center;
+			    width: 49%;
+			    height: 100%;
+			    img {
+				    vertical-align: middle;
+			    }
+			}
+			#descripcion_procedimientos {
+			    float: right;
+			    width: 49%;
+				ul {
+					margin: 0;
+					font-weight: 400;
+					font-style : normal;
+					font-size: 1.6rem;
+				}
+			}
+	    }
+	}
+	#contenido_down {
+		border-top: 6px solid $color-cefaleas-amarillo;
+		width: 100%;
+		height: 473px;
+		#contenido_contacto {
+			float: left;
+		    width: 50%;
+		    margin: 260px 0 0 0;
+			p {
+				margin: 45px 0 45px 0;
+			}
+		}
+		#imagen_procedimiento {
+			float: right;
+		    width: 50%;
+		    height: 100%;
+			background-image: url("../images/cefaleas/procedimientos_cefaleas.png");
+		    background-position: center center;
+		    background-size    : cover;
+		}
+	}
+}
+
+.title{
+	text-align: center;
+	position: relative;
+	font-family: Big Caslon Medium;
+	font-size: 6.4rem;
+	color: $gris_centros;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	&:before{
+			content: "";
+		    position: absolute;
+		    left : 70px;
+		    top: 50%;
+		    transform: translateY(-60%);
+		    width: 7px;
+		    height: 40%;
+			background: $color-cefaleas-amarillo;
+			transition:ease 1s;
+		}
+	&:hover{
+		&:before{
+			left: 85%;
+		}
+	}
+}

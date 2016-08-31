@@ -10,7 +10,6 @@
             left          : 10%;
             bottom        : 10%;
             font-family   : Caslon;
-            color         : white;
             position      : absolute;
             /* display: inline-block; */
             border-left   : solid 5px #9e8629;
@@ -84,7 +83,6 @@
         }
     }
     .golden {
-        color         : #9e8629;
         font-family   : Caslon;
         font-size     : 2.1rem;
         letter-spacing: 3px;
@@ -93,7 +91,6 @@
         }
     }
     .golden_medium {
-        color      : #9e8629;
         font-family: Aspira;
         font-size  : 20pt;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
@@ -150,7 +147,6 @@ p.italico {
     }
     input,
     textarea {
-        background: $gris;
         height    : 50px;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
             height: 40px;
@@ -171,7 +167,6 @@ p.italico {
         width         : 100%;
         padding       : 10px;
         margin        : 10px 0;
-        border-left   : solid 5px $ocre;
         border-bottom : none;
         border-Top    : none;
         border-right  : none;
@@ -206,7 +201,6 @@ p.italico {
         border    : none;
         color     : white;
         text-align: center;
-        background: $ocre;
         height    : 50px;
         @media screen and (max-width: $ipad_mediaquery - 1) {
             height        : 56px;
@@ -227,25 +221,9 @@ p.italico {
     li > span {
         font-size: 0.6em;
     }
-    /*Estilo de placeholder*/
-    ::-webkit-input-placeholder {
-        color: white;
-    }
-    :-moz-placeholder {
-        /* Firefox 18- */
-        color: white;
-    }
-    ::-moz-placeholder {
-        /* Firefox 19+ */
-        color: white;
-    }
-    :-ms-input-placeholder {
-        color: white;
-    }
     *[placeholder],
     [placeholder],
     input[placeholder] {
-        color       : white;
         word-spacing: 6px;
         font-weight : 100;
         font-size   : 1rem;
@@ -270,7 +248,6 @@ p.italico {
 footer {
     display         : block;
     width           : 100%;
-    background-color: $ocre;
     margin: auto;
     max-width: 1280px;
     .copyright {
@@ -339,7 +316,6 @@ footer {
         width   : 40%;
         height  : auto;
         margin  : auto;
-        fill    : $ocre;
         position: relative;
         top     : 30%;
         @media screen and (min-width: 550px) {}
@@ -348,13 +324,13 @@ footer {
 #cerebro {
     fill-rule: evenodd;
     clip-rule: evenodd;
-    fill     : #9e8629;
+    fill     : $gris_centros;
 }
 .payments {
     text-align : center;
     display    : inline-block;
     margin-top : 3%;
-    margin-left: 4%;
+    margin-left: 70px;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
         font-size  : 10pt;
         font-family: Aspira Regular;
@@ -382,4 +358,51 @@ footer {
         float      : none;
         margin-left: 0;
     }
+}
+.contacto{
+    ::-webkit-input-placeholder {
+        color: #000000;
+    }
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: #000000;
+    }
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #000000;
+    }
+    :-ms-input-placeholder {
+        color: #000000;
+    }
+    *[placeholder],
+    [placeholder],
+    input[placeholder] {
+        color       : #000000;
+    }
+}
+.neurocirugia-button{
+        background: rgba(150, 189, 14, 1);
+}
+.neurocirugia-border-item{
+    border-left   : solid 5px rgba(150, 189, 14, 1);
+    background: #E9E9EA;
+}
+.neurocirugia-texto{
+    color: rgba(150, 189, 14, 1);
+}
+.neurocirugia-border-color{
+    border-color:  rgba(150, 189, 14, 1);
+}
+.neurocirugia-cerebro-fill{
+    svg{
+        fill: $gris_centros;
+    }
+}
+.neurocirugia-logo-footer{
+    svg{
+        fill    : rgba(150, 189, 14, 1);
+    }
+}
+.neurocirugia-footer{
+    background-color: rgba(150, 189, 14, 1);
 }
