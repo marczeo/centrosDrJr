@@ -92,6 +92,12 @@
 			padding: 35px 0 35px 0;
 			#que_es_vascular {
 				width: 55%;
+				p {
+					margin-top: 0;
+				}
+				&:before {
+					top: 30%;
+				}
 			}
 			#descripcion_vascular {
 				width: 44%;
