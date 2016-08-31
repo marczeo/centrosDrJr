@@ -59,6 +59,12 @@
         height          : 100%;
         text-align      : left;
         margin: -200px 0 0 0;
+        #cirugias_title {
+		    p {
+			    text-align: right;
+			    margin-right: 10px;
+			}
+        }
         .titulo_cirugias {
         	width: 60%;
         	vertical-align: bottom;
