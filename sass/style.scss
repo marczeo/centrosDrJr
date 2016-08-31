@@ -8,10 +8,12 @@
 @import "mapa";
 @import "neurocirugia";
 @import "que-es-columna";
+@import "navbar";
 html, body {
 	font-family: Aspira;
 	font-size: 16px;
 	height: 100%;
+	color: #403F41;
 }
 *{
 	box-sizing: border-box;
