@@ -69,6 +69,32 @@ $color-columna-gris : rgba(176, 178, 180, 1);
 .hero-banner-parkinson-background{ background-image   : url("../images/parkinson/inicio_parkinson.png"); }
 
 //VASCULAR CEREBRAL
-.color-vascular-rojo { color: rgba(166, 2, 45, 1); }
-.color-fondo-vascular-rojo { background-color: rgba(166, 2, 45, 1); }
-.hero-banner-vascular-background{ background-image   : url("../images/vascular/inicio_vascular.png"); }
+$color-vascular-rojo 		 	 : rgba(166, 2, 45, 1);
+$color-vascular-tinto 		 	 : rgba(82, 2, 21, 1);
+$color-vascular-gris 		 	 : rgba(214, 213, 215, 1);
+.color-vascular-rojo 			 { color: $color-vascular-rojo; }
+.color-vascular-tinto 			 { color: $color-vascular-tinto; }
+.color-vascular-gris 			 { color: $color-vascular-gris; }
+.color-fondo-vascular-rojo  	 { background-color: $color-vascular-rojo; }
+.color-fondo-vascular-tinto 	 { background-color: $color-vascular-tinto; }
+.color-fondo-vascular-gris       { background-color: $color-vascular-gris; }
+.color-formulario-vascular {
+	color 						 : $negro_centros !important;
+	background-color			 : rgba(233, 233, 234, 1) !important;
+	&::-webkit-input-placeholder { color: $negro_centros !important; } /* WebKit */
+	&:-moz-placeholder 			 { color: $negro_centros !important; } /* Firefox 18- */
+	&::-moz-placeholder 		 { color: $negro_centros !important; } /* Firefox 19+ */
+	&:-ms-input-placeholder 	 { color: $negro_centros !important; } /* IE 10+ */
+}
+.hero-banner-vascular-background {
+	background-image   			 : url("../images/vascular/inicio_vascular.png");
+	background-position			 : center center;
+}
+.svg-fill-vascular{
+    svg{
+        fill 					 : $color-vascular-rojo;
+    }
+}
+.border-color-vascular 			 { border-color:  $color-vascular-gris; }
+.button-vascular 				 { background: $color-vascular-rojo; }
+.border-item-vascular 			 { border-left   : solid 5px $color-vascular-rojo; }
