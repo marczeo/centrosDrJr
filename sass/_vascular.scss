@@ -51,36 +51,37 @@
     			}
     		}
     	}
-    	#imagen_procedimiento_header {
-            width           : 100%;
-            max-width       : 1280px;
-            height          : 100%;
-            text-align      : left;
-            margin: -200px 0 0 0;
-            #titulo_cirugias {
-            	width: 60%;
-            	vertical-align: bottom;
-            	&:before {
-            		top: 54%;
-            		height: 60%;
-        		    left: 170px;
-            	}
-            	&:hover { &:before { left: 75%; }}
-            }
-            #imagen {
-            	width: 39%;
-            }
-            div {
-                display       : inline-block;
-                height        : 100%;
-                margin: 0;
-                p { margin: 0;}
-            }
-            img {
-                vertical-align: middle;
-            }
-    	}
     }
+
+	.imagen_procedimiento_header {
+        width           : 100%;
+        max-width       : 1280px;
+        height          : 100%;
+        text-align      : left;
+        margin: -200px 0 0 0;
+        .titulo_cirugias {
+        	width: 60%;
+        	vertical-align: bottom;
+        	&:before {
+        		top: 54%;
+        		height: 60%;
+    		    left: 170px;
+        	}
+        	&:hover { &:before { left: 75%; }}
+        }
+        .imagen {
+        	width: 39%;
+        }
+        div {
+            display       : inline-block;
+            height        : 100%;
+            margin: 0;
+            p { margin: 0;}
+        }
+        img {
+            vertical-align: middle;
+        }
+	}
     #cirugias_hidden {
     	display: none;
     	border-top : 6px solid $color-vascular-rojo;
@@ -89,6 +90,12 @@
 	    	position: relative;
 	    	width: 100%;
 			padding: 35px 0 35px 0;
+			#que_es_vascular {
+				width: 55%;
+			}
+			#descripcion_vascular {
+				width: 44%;
+			}
 			#isotipo_cirugias {
 				float: left;
 			    margin: auto;
@@ -112,6 +119,17 @@
 			.descripcion_cirugias_right {
 			    float: right; 
 			}
+	    }
+	    #contenido_imagen_header {
+	    	background-color: $color-vascular-rojo;
+	    	color 			: white;
+	    	padding-bottom	: 0;
+	    	#nervioso-central {
+				margin: auto;
+	    	}
+	    	div.imagen {
+	    		margin-bottom: -5px;
+	    	} 
 	    }
 	}
 	#contenido_down {
@@ -146,6 +164,11 @@
 		font-size: 3.8rem;
 		font-weight: 300;
 		font-style : italic;
+	}
+	img {
+		margin-left: 30px;		
+	    left: 50%;
+	    transform: translate(-50%, -50%);
 	}
 	span {
 		color: rgba(94, 94, 94, 1);
