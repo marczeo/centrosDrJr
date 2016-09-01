@@ -61,19 +61,20 @@
         margin: -200px 0 0 0;
         #cirugias_title {
 		    p {
-			    text-align: right;
 			    margin-right: 10px;
 			}
         }
         .titulo_cirugias {
-        	width: 60%;
+        	width: 45%;
+    		margin-left: 15%;
         	vertical-align: bottom;
+        	margin-bottom: 20px;
         	&:before {
         		top: 54%;
         		height: 60%;
-    		    left: 170px;
+    		    left: 10%;
         	}
-        	&:hover { &:before { left: 75%; }}
+        	&:hover { &:before { left: 85%; }}
         }
         .imagen {
         	width: 39%;
@@ -129,31 +130,61 @@
 				}
 			}
 			.descripcion_cirugias_right {
-			    float: right; 
+			    float: right;
 			}
 	    }
+		#lista_cirugias {
+			margin: 15px 0 15px 0;
+		}
 	    #contenido_imagen_header {
 	    	background-color: $color-vascular-rojo;
 	    	color 			: white;
 	    	padding-bottom	: 0;
-	    	#nervioso-central {
-				margin: auto;
+	    	#cirugias_2 {
+	    		width: 99%;
+			    margin-bottom: -5px;
+			    margin-top: -300px;
+	    	}
+	    	#nervioso_central {
+	    		width: 99%;
+				margin: 0;
+				#title_nervioso {
+					margin: 0;
+					color: white;
+					span {
+						color: white;
+					}
+				}
+				&:before {
+					background: white;
+					//	left: 20px;
+					//top: 30%;
+				}
 	    	}
 	    	div.imagen {
 	    		margin-bottom: -5px;
-	    	} 
+	    	}
 	    }
 	}
-	#contenido_down {
+	#contenido_down_vascular {
 		border-top: 6px solid $color-vascular-rojo;
 		width: 100%;
 		height: 473px;
-		#contenido_contacto {
+		#contenido_left {
 			float: left;
 		    width: 50%;
-		    margin: 260px 0 0 0;
-			p {
-				margin: 45px 0 45px 0;
+		    margin: 0;
+			#contenido_isotipo_vascular {
+				height: 260px;
+			    background-image: url("../images/cefaleas/isotipo_cefaleas.png");
+			    background-position: center center;
+    			background-repeat: no-repeat;
+			}
+			#contenido_contacto {
+				margin: 0;
+				p {
+					margin: 0;
+				}
 			}
 		}
 		#imagen_procedimiento {
@@ -178,7 +209,7 @@
 		font-style : italic;
 	}
 	img {
-		margin-left: 30px;		
+		margin-left: 30px;
 	    left: 50%;
 	    transform: translate(-50%, -50%);
 	}
