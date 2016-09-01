@@ -17,7 +17,7 @@
 				font-size: 60pt;
 				color: $gris_centros;
 				margin-top: 50px;
-    			margin-bottom: 100px;
+    			margin-bottom: 60px;
 
 				&:before{
 						content: "";
@@ -89,7 +89,7 @@
 						font-size: 40pt;
 						color: $gris_centros;
 						margin-top: 50px;
-						margin-bottom: 50px;
+						margin-bottom: 40px;
 						&:before{
 								content: "";
 							    position: absolute;
@@ -111,7 +111,7 @@
    						font-size: 13pt;
 					    font-family: Aspira Light;
 					    left: -63px;
-					    top: 19px;
+					    top: 6px;
 					    position: relative;
    					}
    				}
@@ -133,7 +133,7 @@
 			}
 
 	.left-cirugia{
-		width: 50%;
+		width: 58%;
 		float: left;
 		.title{
 			text-align: center;
@@ -143,11 +143,11 @@
 				color: $gris_centros;
 				margin-top: 70px;
     			margin-bottom: 70px;
-
+    			margin-left: -100px;
 				&:before{
 						content: "";
 					    position: absolute;
-					    left : 135px;
+					    left: 216px;
 					    top: 50%;
 					    transform: translateY(-50%);
 					    width: 7px;
@@ -186,11 +186,11 @@
 				font-family: Big Caslon Medium;
 				font-size: 60pt;
 				color: #FFFFFF;
-
+				margin-left: -100px;
 				&:before{
 						content: "";
 					    position: absolute;
-					    left : 135px;
+					    left : 216px;
 					    top: 50%;
 					    transform: translateY(-50%);
 					    width: 7px;
@@ -207,10 +207,10 @@
 		}
 	}
 	.right-cirugia{
-		width: 50%;
+		width: 42%;
 		float: right;
 		background-image: url("../images/neurocirugia/cirugias_neurocirugia_pediatrica.png");
-		background-size: 100% 100%;
+		background-repeat: no-repeat;
 	    height: 757px;
 	    display: flex;
 	}
@@ -273,7 +273,7 @@
 			width: 50%;
 			float: right;
 			font-size: 14pt;
-			font-family: Aspira Regular;
+			font-family: Aspira;
 			line-height: 1.3;
 		}
 	}
