@@ -406,3 +406,30 @@ footer {
 .neurocirugia-footer{
     background-color: rgba(150, 189, 14, 1);
 }
+//
+.columna-button{
+        background: $color-columna-azul;
+}
+.columna-border-item{
+    border-left   : solid 5px $color-columna-azul;
+    background: #E9E9EA;
+}
+.columna-texto{
+    color: $color-columna-azul;
+}
+.columna-border-color{
+    border-color:  $color-columna-azul;
+}
+.columna-cerebro-fill{
+    svg{
+        fill: $gris_centros;
+    }
+}
+.columna-logo-footer{
+    svg{
+        fill    : $color-columna-azul;
+    }
+}
+.columna-footer{
+    background-color: $color-columna-azul;
+}
