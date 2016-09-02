@@ -10,7 +10,7 @@
 		    position: fixed !important;
 		    top: 0;
 		.f-navbar{
-		    background-color: #96bd0e;
+		    /*background-color: #96bd0e;*/
 			img{
 				width: 50px;
 				margin-left: 225px;
@@ -41,11 +41,7 @@
 		    		li{
 		    			margin-bottom: 3px;
 		    			a{
-		    				text-decoration: none;
-		    				color: #98999b;
-		    				.font-change{
-		    					color: #96bd0e;
-		    				}
+		    				text-decoration: none;		    				
 		    			}
 		    		}
 		    	}

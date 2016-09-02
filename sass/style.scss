@@ -1,14 +1,15 @@
 @import "vars";
 @import "colores";
 @import "cefaleas";
+@import "vascular";
 @import "contacto";
 @import "fonts";
 @import "grid-system";
+@import "navbar";
 @import "hero_banner";
 @import "mapa";
 @import "neurocirugia";
 @import "que-es-columna";
-@import "navbar";
 html, body {
 	font-family: Aspira;
 	font-size: 16px;
@@ -20,4 +21,27 @@ html, body {
 }
 body {
 	margin: 0;
+}
+a {
+    text-decoration: none;
+    color          : $gris_centros;
+    //Color de fuente
+    &:hover {
+        font-weight: bold;
+    }
+    &.link_cefaleas:hover {
+        color: $color-cefaleas-amarillo;
+    }
+    &.link_columna:hover {
+        color: $color-columna-azul;
+    }
+    &.link_neurocirugia:hover {
+        color: $color-neurocirugia-verde;
+    }
+    &.link_neuroncologia:hover {
+        color: $color-neuroncologia-azul;
+    }
+    &.link_vascular:hover {
+        color: $color-vascular-rojo;
+    }
 }

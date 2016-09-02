@@ -3,10 +3,10 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Centro de Cefáleas y Migrañas">
+    <meta name="description" content="Centro Vascular Cerebral">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="author" content="@alainxps">
-    <title>Centro de Cefáleas y Migrañas</title>
+    <title>Centro Vascular Cerebral</title>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9YJqQkJ4-FPQB9T7pfc90Hfe6JwQLRo'></script>
         <script src="js/maps.js" charset="utf-8"></script>
@@ -19,53 +19,57 @@
   <body>
     <div class="navbar" style="display : none;">
       <div class="navbar-fixed">
-        <div class="f-navbar color-fondo-cefaleas-amarillo">
+        <div class="f-navbar color-fondo-vascular-rojo">
           <img src="images\burger_icon.png" id="burger">
         </div>
         <div class="navbar-options" style="display : none;">
           <div class="element">
-            <ul class="menu">
-                <li> <a class="link_cefaleas"  href="#que_es">¿Qué es? </a> </li>
-                <li> <a class="link_cefaleas"  href="#titulo_procedimientos">Procedimientos </a> </li>
-                <li> <a class="link_cefaleas"  href="#contenido_contacto">Contacto </a> </li>
+            <ul>
+                <li> <a class="link_vascular"  href="#que_es">¿Qué es? </a> </li>
+                <li> <a class="link_vascular"  href="#cirugias_title">Cirugías </a> </li>
+                <li> <a class="link_vascular"  href="#contenido_contacto">Contacto </a> </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div id="hero_banner" class="hero-banner hero-banner-cefaleas-background">               <!-- Hero Banner inicia-->
+    <div id="hero_banner" class="hero-banner hero-banner-vascular-background">               <!-- Hero Banner inicia-->
         <div class="upper-side">              <!-- Primera línea -->
-            <div class="centro-color color-fondo-cefaleas-amarillo">
+            <div class="centro-color color-fondo-vascular-rojo">
                 <span ></span>
-                <img src="images/cefaleas/isotipo_cefaleas_blanco.png" alt="" />
+                <img src="images/vascular/isotipo_vascular_blanco.png" alt="" />
             </div>
             <div class="centro-titulo">
                 <p>
-                    Centro de<br>
-                    <span class="color-cefaleas-amarillo">Cefáleas y</span><br>
-                    <span class="color-cefaleas-naranja">Migrañas</span>
+                    Centro<br>
+                    <span class="color-vascular-tinto">Vascular</span><br>
+                    <span class="color-vascular-rojo">Cerebral</span>
                 </p>
             </div>
         </div>
         <div class="centro-menu">             <!-- Segunda línea -->
             <ul>
-                <li> <a class="link_cefaleas"  href="#que_es">¿Qué es? </a> </li>
-                <li> <a class="link_cefaleas"  href="#titulo_procedimientos">Procedimientos </a> </li>
-                <li> <a class="link_cefaleas"  href="#contenido_contacto">Contacto </a> </li>
+                <li> <a class="link_vascular"  href="#que_es">¿Qué es? </a> </li>
+                <li> <a class="link_vascular"  href="#cirugias_title">Cirugías </a> </li>
+                <li> <a class="link_vascular"  href="#contenido_contacto">Contacto </a> </li>
             </ul>
         </div>
     </div>                                  <!-- Hero Banner termina-->
-    <div id="limit" class="contenido">
+
+
+    <div id="limit" class="contenido_vascular">
+
         <div id="contenido_up">
             <div id="que_es">
                 <div id="parrafo">
-                    <div id="titulo" class="title" onclick="slide_section('texto');"><p>¿Qué es?</p></div>
+                    <div id="titulo" class="title title_vascular" onclick="slide_section('texto');"><p>¿Qué es?</p></div>
                     <p id="texto">
-                        Centro multidisciplinario para el <b>control y curación de cefáleas y migrañas</b>, que representan la consulta neurológica más frecuente e incapacitante por horas, días, semanas, meses y años. Las neuralgias, se presentan, en la vida adulta y suele ser más severa que las anteriores.
+                        Estos centros se encargan de las <b>intervenciones quirúrgicas a nivel craneal</b>, es decir, se enfocan al tratamiento integral de la hemorragia subarácnoidea y de ruptura secundaria. Desde Meningiomas, Adenomas Hipofisiarios y Gliomas, hasta Aneurismas de Circulación Anterior, Tumoraciones de Fosas, Neuromas y Ependimomas. Cada cirugía es de invasión mínima y trata las dolencias cerebrales y traumas severos de índole superficial. Esto se entiende como un tratamiento hacia la hidrocefalia y vasoespasmo cerebral que se reduce mediante el clipaje del aneurisma en cirugía temprana o ultra asociada a terapia de Hipertensión y Hemodilución.
+                        <br><br>
+                        Enfocado a la resolución de embolias, parálisis, hemorragias, hematomas e infartos de diversas causas. Utilizando tecnología de vanguardia, como microscopia quirúrgica, terapia endovascular (stens, coils, balones) y revascularizaciones.
                     </p>
                 </div>
-                <div id="pattern_logo" class="color-fondo-cefaleas-menta">
-                    <div id="pattern"> </div>
+                <div id="pattern_logo" class="color-fondo-vascular-gris">
                     <div id="svg_logo" >
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 647.3 647.3" xml:space="preserve">
                             <path d="M173 77.8c43.9-27 95.5-42.6 150.7-42.6 159.1 0 288.5 129.4 288.5 288.4 0 60.6-18.8 116.8-50.8 163.2 1.6 1.3 2.9 2.3 3.9 3 7.2 4.9 15.9 8.1 26 9.6 1.2 0.2 2.3 0.4 3.5 0.7 33.2-50.8 52.6-111.4 52.6-176.5C647.3 145.2 502.1 0 323.7 0c-80.3 0-153.8 29.4-210.4 78 1.6-0.1 3.1-0.2 4.7-0.2H173zM323.7 612.1c-15.7 0-31.1-1.3-46.1-3.7 -6.6 11.4-15 21.8-24.9 31 22.8 5.1 46.6 7.9 71 7.9 52.2 0 101.5-12.5 145.3-34.6 -18.1-1.8-32.6-8.9-44.9-18.7C392.8 605.7 358.9 612.1 323.7 612.1zM35.2 323.7c0-54.9 15.4-106.2 42.1-149.9 -8.5-9.6-13.6-22.2-13.6-36V132c0-0.3 0-0.6 0-1C23.7 184.9 0 251.5 0 323.7c0 73 24.3 140.4 65.2 194.6 10.3-6.9 21.8-11.6 33.9-13.8C59.2 455 35.2 392.1 35.2 323.7zM323.7 582.1c-11.5 0-22.8-0.8-34-2.3 -1.3 4.6-3 9.2-4.8 13.6 12.7 1.8 25.6 2.8 38.8 2.8 30.5 0 59.8-5.1 87.3-14.4 -3.4-3.7-6.7-7.5-9.8-11.5C376.7 577.9 350.6 582.1 323.7 582.1zM123.3 486.8C87 442.2 65.2 385.5 65.2 323.7c0-49 13.7-94.8 37.5-133.9 -4.6-1.3-8.9-3.3-13-5.7 -24.5 40.8-38.6 88.6-38.6 139.6 0 68.7 25.6 131.5 67.7 179.5 1.3 0.1 2.7 0.1 4 0.2C123.1 497.1 123.2 491.3 123.3 486.8zM323.7 65.2c142.5 0 258.5 115.9 258.5 258.4 0 51.7-15.3 99.9-41.6 140.3 3.4 4.5 6.5 8.3 9.4 11.5 29.3-43.4 46.3-95.7 46.3-151.9 0-150.3-122.3-272.5-272.5-272.5 -42 0-81.9 9.6-117.5 26.7h37.9C269.2 69.7 295.9 65.2 323.7 65.2z"
@@ -74,37 +78,107 @@
                             />
                         </svg>
                     </div>
+                    <div id="pattern"> </div>
                 </div>
             </div>
-            <div id="imagen_procedimiento_header">
-                <div id="imagen"><img src="images/cefaleas/que_es_cefaleas.png" alt="" /></div>
-                <div id="titulo_procedimientos" class="title" onclick="slide_section('procedimientos_hidden');"><p>Procedimientos</p></div>
+            <div class="imagen_procedimiento_header">
+                <div class="imagen"><img src="images/vascular/que_es_vascular.png" alt="" /></div>
+                <div id="cirugias_title" class="titulo_cirugias title title_vascular" onclick="slide_section('cirugias_hidden');"><p>Cirugías</p></div>
             </div>
         </div>
 
-        <div id="procedimientos_hidden">
-            <div id="contenido_procedimientos" >
-                <div id="isotipo_procedimientos" >
-                    <img src="images/cefaleas/isotipo_cefaleas.png" alt="" />
+        <div id="cirugias_hidden">
+
+            <div class="contenido_cirugias" >
+                <div id="que_es_vascular" class="descripcion_cirugias title title_vascular">
+                    <p id="que_es_cerebral" class="italic">
+                        ¿Qué es?<br>
+                        <span>Vascular Cerebral</span>
+                    </p>
+                    <img src="images/neurocirugia/flecha_d.png" alt="" />
                 </div>
-                <div id="descripcion_procedimientos">
-                    <ul>
-                        <li>Cefáleas y Migrañas </li>
-                        <li>Neuralgia Trigeminal (Decompresión microvascular, termocoagulación con radiofrecuencia) </li>
-                        <li>Neuralgia Glosofaringea (Descompresión microvascular) </li>
-                        <li>Neuralgia Posherpética (Desaferentación del ganglio de la raíz dorsal) </li>
-                        <li>Sacroileitis (Termocoagulación con radiofrecuencia) </li>
-                        <li>Dolor Espinal Intratable (Colocación de electrodos epidurales) </li>
+                <div id="descripcion_vascular" class="descripcion_cirugias descripcion_cirugias_right">
+                    <ul class="lista_derecha">
+                        <li>Enfermedad oclusiva carotídea y vertebral </li>
+                        <li>Drenaje de hematomas epidurales, subdurales, parenquimatosos </li>
+                        <li>Clipaje de aneurismas circulación anterior, circulación posterior </li>
+                        <li>Terapia endovascular con stent y coils, en el tratamiento de aneurismas </li>
+                        <li>Manejo de vasoespasmo cerebral secundario a hemorragia subaracnoidea (angioplastias, terapia doble y triple-h, manejo de hipertensión intracraneana) </li>
+                        <li>Angiomas cavernosos supra e infratentoriales </li>
+                        <li>Malformaciones arteriovenosas espinales </li>
+                        <li>Fistulas carotido cavernosas </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="contenido_imagen_header" class="contenido_cirugias" >
+                <div id="img_cirugias_2" class="imagen">
+                    <img src="images/vascular/cirugias_vascular_2.png" alt="" />
+                </div>
+                <div id="nervioso_central" class="descripcion_cirugias descripcion_cirugias_right title title_vascular">
+                    <p id="title_nervioso" class="italic">
+                        Cirugía Vascular<br>
+                        <span>del Sistema Nervioso Central</span><br>
+                        <img src="images/flecha_abajo.png" alt="" />
+                    </p>
+                </div>
+            </div>
+
+            <!--<div class="imagen_procedimiento_header">
+                <div class="imagen"><img src="images/vascular/que_es_vascular.png" alt="" /></div>
+
+                <div class="descripcion_cirugias descripcion_cirugias_right titulo_cirugias title title_vascular" >
+                    <p class="italic">
+                        Cirugía Vascular<br>
+                        <span>del Sistema Nervioso Central</span><br>
+                    </p>
+                </div>
+
+            </div>-->
+
+            <div id="lista_cirugias" class="contenido_cirugias" >
+                <!--<div id="isotipo_cirugias" >
+                    <img src="images/vascular/isotipo_vascular.png" alt="" />
+                </div>-->
+                <div class="descripcion_cirugias">
+                    <ul class="lista_izquierda">
+                        <li>Lesiones carotídeas no ateroescleróticas </li>
+                        <li>Enfermedad de moya-moya </li>
+                        <li>Hemorragia parenquimatosa secundaria a hipertensión arterial </li>
+                        <li>Hemorragia subaracnoideo secundaria a ruptura de aneurismas </li>
+                        <li>Vasoespasmo cerebral </li>
+                        <li>Tratamiento quirúrgico de aneurismas de circulación anterior </li>
+                        <li>Tratamiento quirúrgico de aneurismas intracavernosos y paraclinoideos </li>
+                        <li>Aneurismas de arteria cerebral anterior y comunicante anterior </li>
+                        <li>Aneurismas de arteria cerebral anterior distal </li>
+                        <li>Aneurismas de arteria cerberal media </li>
+                    </ul>
+                </div>
+                <div class="descripcion_cirugias descripcion_cirugias_right">
+                    <ul class="lista_derecha">
+                        <li>Abordajes quirúrgicos a aneurismas de la ciruclación posterior </li>
+                        <li>Aneurismas de de la unión vertebrobasilar, arteria vertebral y arteria cerebelosa posteroinferior </li>
+                        <li>Aneurismas de tronco de la basilar, apex y de la arteria cerberal posterior </li>
+                        <li>Aneurismas gigantes </li>
+                        <li>Aneurismas  infecciosos intracraneales </li>
+                        <li>Aneurismas postraumáticos </li>
+                        <li>Tratamiento quirúrgico de malformaciones arteriovenosas </li>
+                        <li>Tratamiento quirúrgico de angiomas cavernosos </li>
+                        <li>Extirpación de angiomas cavernosos supratentoriales </li>
+                        <li>Extirpación de angiomas cavernosos infratentoriales </li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div id="contenido_down" >
-            <div id="contenido_contacto" class="title color-fondo-cefaleas-menta" >
-                <p>
-                    Contacto
-                </p>
+        <div id="contenido_down_vascular" >
+            <div id="contenido_left">
+                <div id="contenido_isotipo_vascular" > </div>
+                <div id="contenido_contacto" class="isotipo title title_vascular color-fondo-vascular-gris" >
+                    <p>
+                        Contacto
+                    </p>
+                </div>
             </div>
             <div id="imagen_procedimiento" ></div>
         </div>
@@ -115,57 +189,57 @@
             <ul>
                 <li>
                     <!--<label for="contact-name"> </label>-->
-                    <input class="border-item-cefaleas color-formulario-cefaleas" type="text" name="contact-responsible" placeholder="Nombre del responsable de este mensaje" required>
+                    <input class="border-item-vascular color-formulario-vascular" type="text" name="contact-responsible" placeholder="Nombre del responsable de este mensaje" required>
                 </li>
                 <li>
                     <!--<label for="contact-name"> </label>-->
-                    <input class="border-item-cefaleas color-formulario-cefaleas" type="text" name="contact-name" placeholder="Nombre del paciente" required>
+                    <input class="border-item-vascular color-formulario-vascular" type="text" name="contact-name" placeholder="Nombre del paciente" required>
                 </li>
                 <li>
                     <!-- <label for="contact-age">Edad/Antigüedad: </label> -->
-                    <input class="border-item-cefaleas color-formulario-cefaleas" type="number" name="contact-age" min="0" id="age" max="200" placeholder="Edad" required>
+                    <input class="border-item-vascular color-formulario-vascular" type="number" name="contact-age" min="0" id="age" max="200" placeholder="Edad" required>
                 </li>
                 <li>
                     <!-- <label for="contact-phone">Teléfono: </label> -->
-                    <input class="border-item-cefaleas color-formulario-cefaleas" type="tel" id="contact-phone" name="contact-phone" id="phone" placeholder="Teléfono " required>
+                    <input class="border-item-vascular color-formulario-vascular" type="tel" id="contact-phone" name="contact-phone" id="phone" placeholder="Teléfono " required>
                 </li>
                 <li>
                     <!-- <label for="email-contact ">Correo electrónico: </label> -->
-                    <input class="border-item-cefaleas color-formulario-cefaleas" type="email " name="email-contact" placeholder="Correo Electrónico " required>
+                    <input class="border-item-vascular color-formulario-vascular" type="email " name="email-contact" placeholder="Correo Electrónico " required>
                 </li>
                 <li>
                     <!--<label for="contact-name "> </label>-->
-                    <input class="border-item-cefaleas color-formulario-cefaleas" type="text " name="contact-subject" placeholder="Asunto " required>
+                    <input class="border-item-vascular color-formulario-vascular" type="text " name="contact-subject" placeholder="Asunto " required>
                 </li>
                 <li>
                     <!-- <label for="contact-description ">Descripción del asunto: </label> -->
-                    <textarea class="border-item-cefaleas color-formulario-cefaleas" name="contact-description" cols="50 " rows="6 " placeholder="Mensaje "></textarea>
+                    <textarea class="border-item-vascular color-formulario-vascular" name="contact-description" cols="50 " rows="6 " placeholder="Mensaje "></textarea>
                 </li>
                 <li>
-                    <button class="button-cefaleas" type="submit">ENVIAR</button>
+                    <button class="button-vascular" type="submit">ENVIAR</button>
                 </li>
             </ul>
         </form>
         <div class="address">
-            <div class="banner_logo border-color-cefaleas">
+            <div class="banner_logo border-color-vascular">
                 <object type="image/svg+xml" data="iconos/cerebro.svg">imagen de cerebro</object>
             </div>
-            <p class="golden color-cefaleas-amarillo">Torre Médica Providencia</p>
+            <p class="golden color-vascular-rojo">Torre Médica Providencia</p>
             <br>
             <p>
                 <strong>Pablo Neruda <i>#3265<br></i></strong>
                 Segundo piso, Consultorio 28<br>
                 Col. Providencia C.P. 44630
             </p>
-            <span class="golden_medium color-cefaleas-amarillo">
+            <span class="golden_medium color-vascular-rojo">
                 <i>Guadalajara, Jalisco</i>
             </span>
             <p>juanmriestra@hotmail.com</p>
             <br>
-            <div class="banner_logo_ocre border-color-cefaleas-amarillo"> </div>
+            <div class="banner_logo_ocre border-color-vascular-rojo"> </div>
             <p>
                 Tel. &nbsp;<strong>33 3813 1360<br></strong>
-                <span class="golden reacomodo color-cefaleas-amarillo">Emergencias&nbsp;&nbsp;</span>(01) 33 3100 0260
+                <span class="golden reacomodo color-vascular-rojo">Emergencias&nbsp;&nbsp;</span>(01) 33 3100 0260
             </p>
         </div>
         <div class="mapas">
@@ -180,13 +254,13 @@
         </span>
     </div>
 
-    <footer class="color-fondo-cefaleas-amarillo" >
+    <footer class="color-fondo-vascular-rojo" >
         <span class="copyright">
             <span class="font_change">TODOS LOS DERECHOS RESERVADOS<br></span>
             <span class="firma">DR. JUAN MANUEL RIESTRA </span>
             <span style="font-family: 'Aspira';font-weight: lighter;letter-spacing: 2px;">2016</span>
         </span>
-        <div class="logo_footer svg-fill-cefaleas">
+        <div class="logo_footer svg-fill-vascular">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 647.3 647.3" xml:space="preserve">
                 <path d="M173 77.8c43.9-27 95.5-42.6 150.7-42.6 159.1 0 288.5 129.4 288.5 288.4 0 60.6-18.8 116.8-50.8 163.2 1.6 1.3 2.9 2.3 3.9 3 7.2 4.9 15.9 8.1 26 9.6 1.2 0.2 2.3 0.4 3.5 0.7 33.2-50.8 52.6-111.4 52.6-176.5C647.3 145.2 502.1 0 323.7 0c-80.3 0-153.8 29.4-210.4 78 1.6-0.1 3.1-0.2 4.7-0.2H173zM323.7 612.1c-15.7 0-31.1-1.3-46.1-3.7 -6.6 11.4-15 21.8-24.9 31 22.8 5.1 46.6 7.9 71 7.9 52.2 0 101.5-12.5 145.3-34.6 -18.1-1.8-32.6-8.9-44.9-18.7C392.8 605.7 358.9 612.1 323.7 612.1zM35.2 323.7c0-54.9 15.4-106.2 42.1-149.9 -8.5-9.6-13.6-22.2-13.6-36V132c0-0.3 0-0.6 0-1C23.7 184.9 0 251.5 0 323.7c0 73 24.3 140.4 65.2 194.6 10.3-6.9 21.8-11.6 33.9-13.8C59.2 455 35.2 392.1 35.2 323.7zM323.7 582.1c-11.5 0-22.8-0.8-34-2.3 -1.3 4.6-3 9.2-4.8 13.6 12.7 1.8 25.6 2.8 38.8 2.8 30.5 0 59.8-5.1 87.3-14.4 -3.4-3.7-6.7-7.5-9.8-11.5C376.7 577.9 350.6 582.1 323.7 582.1zM123.3 486.8C87 442.2 65.2 385.5 65.2 323.7c0-49 13.7-94.8 37.5-133.9 -4.6-1.3-8.9-3.3-13-5.7 -24.5 40.8-38.6 88.6-38.6 139.6 0 68.7 25.6 131.5 67.7 179.5 1.3 0.1 2.7 0.1 4 0.2C123.1 497.1 123.2 491.3 123.3 486.8zM323.7 65.2c142.5 0 258.5 115.9 258.5 258.4 0 51.7-15.3 99.9-41.6 140.3 3.4 4.5 6.5 8.3 9.4 11.5 29.3-43.4 46.3-95.7 46.3-151.9 0-150.3-122.3-272.5-272.5-272.5 -42 0-81.9 9.6-117.5 26.7h37.9C269.2 69.7 295.9 65.2 323.7 65.2z"
                 />
