@@ -29,10 +29,7 @@
 	max-width: $max_width;
 	margin: auto;
 	display: flex;
-	border: 0;
-	border-bottom: 5px;
-	border-style: solid;
-	border-color: $color-columna-gris;
+	
 	.container-logo{
 		width: 50%;
 		height: inherit;
@@ -57,6 +54,10 @@
     		float: left;
     		display: flex;
     		width: 100%;
+    		border: 0;
+			border-bottom: 5px;
+			border-style: solid;
+			border-color: $color-columna-gris;
     		.cirugias-title{
     			margin: auto 50px;
     		}
@@ -207,11 +208,9 @@
 			max-width: $max_width;
 			margin-left: auto;
 			border: 0;
-			border-top: 10px;
-			border-bottom: 10px;
+			border-top: 10px;			
 			border-style: solid;
-			border-top-color: $color-columna-azul;
-			border-bottom-color: $color-columna-gris;
+			border-top-color: $color-columna-azul;			
 
 			.imagen{
 				width: 50%;
@@ -237,7 +236,10 @@
 				width: 50%;
 				float: left;
 				max-width: $max_mediaquery/2;				
-				
+				border: 0;
+				border-bottom: 10px;
+				border-style: solid;
+				border-color: $color-columna-gris;
 				
 				padding-right: 20px;
 				margin-left: auto;
