@@ -28,3 +28,14 @@ else{
 }
     $("#" + section).slideToggle();
 }
+
+function slide_columna_que_es(section){
+    if ($("#" + section).is(":visible")){
+        $('#que-es-principal').css('display', 'block');
+    }
+    else{
+        $('#que-es-principal').css('display', 'none');        
+    }
+    $("#" + section).slideToggle();
+
+}
