@@ -36,6 +36,13 @@ ul.lista_derecha {
 				    font-weight: 300;
 				    font-style: italic;
 				    font-size: 1.25rem;
+				    hr {
+					    margin-top: 40px;
+					    width: 60px;
+					    height: 4px;
+					    margin-left: 0px;
+					    background-color: $gris_centros;
+				    }
     			}
     		}
     		#pattern_logo {
