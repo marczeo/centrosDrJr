@@ -146,26 +146,40 @@ ul.lista_derecha {
 	    #contenido_imagen_header {
 	    	background-color: $color-vascular-rojo;
 	    	color 			: white;
-	    	padding-bottom	: 0;
-	    	#cirugias_2 {
-	    		width: 99%;
+	    	padding      	: 0;
+	    	display: flex;
+	    	position: relative;
+	    	#img_cirugias_2 {
+	    		float: left;
+	    		width: 50%;
 			    margin-bottom: -5px;
 			    margin-top: -300px;
 	    	}
 	    	#nervioso_central {
-	    		width: 99%;
+	    		float: right;
+	    		width: 49%;
+	    		height: 100%;
 				margin: 0;
-				#title_nervioso {
-					margin: 0;
+				#title_nervioso {    
+					margin-left: 30px;
+   					margin-right: 70px;
+   					margin-bottom: 0;
+					vertical-align: middle;
 					color: white;
 					span {
 						color: white;
 					}
+					img {
+						margin-left: 40%;
+					    left: 0;
+					    transform: translate(0, 0);
+					}
 				}
 				&:before {
 					background: white;
-					//	left: 20px;
-					//top: 30%;
+					left: 0px;
+					top: 52%;
+					height: 48%;
 				}
 	    	}
 	    	div.imagen {
