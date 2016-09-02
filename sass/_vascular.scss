@@ -22,7 +22,8 @@ ul.lista_derecha {
 			    #titulo {
     				margin: 0;
     				p {
-    					margin: 40px 0 50px 0;
+    					text-align: left;
+    					margin: 40px 0 50px 110px;
     				}
     				&:before {
     					height: 80%;
@@ -34,7 +35,7 @@ ul.lista_derecha {
 				    margin: -30px 30px 40px 70px;
 				    font-weight: 300;
 				    font-style: italic;
-				    font-size: 1.45rem;
+				    font-size: 1.25rem;
     			}
     		}
     		#pattern_logo {
@@ -78,7 +79,7 @@ ul.lista_derecha {
         	&:before {
         		top: 63%;
     			height: 80%;
-    		    left: 10%;
+    		    left: 17.5%;
         	}
         	&:hover { &:before { left: 85%; }}
         }
@@ -102,19 +103,20 @@ ul.lista_derecha {
 	    	display: flex;
 	    	position: relative;
 	    	width: 100%;
-			padding: 35px 0 35px 0;
+			padding: 70px 0;
 			#que_es_vascular {
-				width: 55%;
+				margin-top: 0;
+				width: 49%;
 				p {
 					margin-top: 0;
 					margin-left: 70px;
 				}
 				&:before {
-					top: 20%;
+					top: 26.5%;
 				}
 			}
 			#descripcion_vascular {
-				width: 44%;
+				width: 49%;
 			}
 			#isotipo_cirugias {
 				float: left;
@@ -133,7 +135,7 @@ ul.lista_derecha {
 					margin: 0;
 					font-weight: 400;
 					font-style : normal;
-					font-size: 1.6rem;
+					font-size: 1.3rem;
 				}
 			}
 			.descripcion_cirugias_right {
@@ -141,19 +143,18 @@ ul.lista_derecha {
 			}
 	    }
 		#lista_cirugias {
-			margin: 15px 0 15px 0;
+			margin: 0;
 		}
 	    #contenido_imagen_header {
 	    	background-color: $color-vascular-rojo;
 	    	color 			: white;
-	    	padding      	: 0;
+	    	padding 		: 35px 0;
 	    	display: flex;
 	    	position: relative;
 	    	#img_cirugias_2 {
-	    		float: left;
-	    		width: 50%;
-			    margin-bottom: -5px;
-			    margin-top: -300px;
+	    		float  : left;
+	    		width  : 50%;
+    		    margin : -345px 0 -40px 0;
 	    	}
 	    	#nervioso_central {
 	    		float: right;
@@ -196,7 +197,7 @@ ul.lista_derecha {
 		    width: 50%;
 		    margin: 0;
 			#contenido_isotipo_vascular {
-				height: 260px;
+				height: 290px;
 			    background-image: url("../images/vascular/isotipo_vascular.png");
 			    background-position: center center;
     			background-repeat: no-repeat;
@@ -207,6 +208,8 @@ ul.lista_derecha {
 					margin: 0;
 				    padding-top: 42px;
     				padding-bottom: 41px;
+    				text-align: left;
+    				margin-left: 110px;
 				}
 			}
 		}
@@ -227,7 +230,7 @@ ul.lista_derecha {
 	    margin-left: 100px;
 	    text-align: left;
 	    font-family: Aspira;
-		font-size: 3.8rem;
+		font-size: 3.125rem;
 		font-weight: 300;
 		font-style : italic;
 	}
