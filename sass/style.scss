@@ -22,3 +22,26 @@ html, body {
 body {
 	margin: 0;
 }
+a {
+    text-decoration: none;
+    color          : $gris_centros;
+    //Color de fuente
+    &:hover {
+        font-weight: bold;
+    }
+    &.link_cefaleas:hover {
+        color: $color-cefaleas-amarillo;
+    }
+    &.link_columna:hover {
+        color: $color-columna-azul;
+    }
+    &.link_neurocirugia:hover {
+        color: $color-neurocirugia-verde;
+    }
+    &.link_neuroncologia:hover {
+        color: $color-neuroncologia-azul;
+    }
+    &.link_vascular:hover {
+        color: $color-vascular-rojo;
+    }
+}
