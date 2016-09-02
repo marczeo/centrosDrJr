@@ -47,14 +47,16 @@ $color-logo-jr		: rgba(193, 193, 195, 1);
 
 
 //NEUROCIRUGÍA PEDIÁTRICA
-.color-neurocirugia-verde { color: rgba(150, 189, 14, 1); }
+$color-neurocirugia-verde : rgba(150, 189, 14, 1);
+.color-neurocirugia-verde { color: $color-neurocirugia-verde; }
 .color-neurocirugia-limon { color: rgba(217, 229, 131, 1); }
 .color-fondo-neurocirugia-verde { background-color: rgba(150, 189, 14, 1); }
 .color-fondo-neurocirugia-limon { background-color: rgba(217, 229, 131, 1); }
 .hero-banner-neurocirugia-background{ background-image   : url("../images/neurocirugia/inicio_neurocirugia_pediatrica.png"); }
 
 //NEURO ONCOLOGÍA
-.color-neuroncologia-azul { color: rgba(63, 157, 200, 1); }
+$color-neuroncologia-azul : rgba(63, 157, 200, 1);
+.color-neuroncologia-azul { color: $color-neuroncologia-azul; }
 .color-neuroncologia-menta { color: rgba(127, 204, 255, 1); }
 .color-neuroncologia-crema { color: rgba(255, 229, 198, 1); }
 .color-fondo-neuroncologia-azul { background-color: rgba(63, 157, 200, 1); }
@@ -70,6 +72,32 @@ $color-logo-jr		: rgba(193, 193, 195, 1);
 .hero-banner-parkinson-background{ background-image   : url("../images/parkinson/inicio_parkinson.png"); }
 
 //VASCULAR CEREBRAL
-.color-vascular-rojo { color: rgba(166, 2, 45, 1); }
-.color-fondo-vascular-rojo { background-color: rgba(166, 2, 45, 1); }
-.hero-banner-vascular-background{ background-image   : url("../images/vascular/inicio_vascular.png"); }
+$color-vascular-rojo 		 	 : rgba(166, 2, 45, 1);
+$color-vascular-tinto 		 	 : rgba(82, 2, 21, 1);
+$color-vascular-gris 		 	 : rgba(214, 213, 215, 1);
+.color-vascular-rojo 			 { color: $color-vascular-rojo; }
+.color-vascular-tinto 			 { color: $color-vascular-tinto; }
+.color-vascular-gris 			 { color: $color-vascular-gris; }
+.color-fondo-vascular-rojo  	 { background-color: $color-vascular-rojo; }
+.color-fondo-vascular-tinto 	 { background-color: $color-vascular-tinto; }
+.color-fondo-vascular-gris       { background-color: $color-vascular-gris; }
+.color-formulario-vascular {
+	color 						 : $negro_centros !important;
+	background-color			 : rgba(233, 233, 234, 1) !important;
+	&::-webkit-input-placeholder { color: $negro_centros !important; } /* WebKit */
+	&:-moz-placeholder 			 { color: $negro_centros !important; } /* Firefox 18- */
+	&::-moz-placeholder 		 { color: $negro_centros !important; } /* Firefox 19+ */
+	&:-ms-input-placeholder 	 { color: $negro_centros !important; } /* IE 10+ */
+}
+.hero-banner-vascular-background {
+	background-image   			 : url("../images/vascular/inicio_vascular.png");
+	background-position			 : center center;
+}
+.svg-fill-vascular{
+    svg{
+        fill 					 : $color-vascular-rojo;
+    }
+}
+.border-color-vascular 			 { border-color:  $color-vascular-gris; }
+.button-vascular 				 { background: $color-vascular-rojo; }
+.border-item-vascular 			 { border-left   : solid 5px $color-vascular-rojo; }
