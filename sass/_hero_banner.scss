@@ -75,7 +75,22 @@ div.hero-banner {
                     color          : $gris_centros;
                     //Color de fuente
                     &:hover {
-                        font-size: 125%;
+                        font-weight: bold;
+                    }
+                    &.link_cefaleas:hover {
+                        color: $color-cefaleas-amarillo;
+                    }
+                    &.link_columna:hover {
+                        color: $color-columna-azul;
+                    }
+                    &.link_neurocirugia:hover {
+                        color: $color-neurocirugia-verde;
+                    }
+                    &.link_neuroncologia:hover {
+                        color: $color-neuroncologia-azul;
+                    }
+                    &.link_vascular:hover {
+                        color: $color-vascular-rojo;
                     }
                 }
             }
