@@ -7,14 +7,32 @@
     <meta name="author" content="AORI | Marco Gómez @marczeo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <title>Columna Vertebral</title>
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9YJqQkJ4-FPQB9T7pfc90Hfe6JwQLRo'></script>
-        <script src="js/maps.js" charset="utf-8"></script>
-        <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/maps.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/navbar.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
   </head>
 
   <body>
+    <div class="navbar" style="display : none;">
+      <div class="navbar-fixed">
+        <div class="f-navbar color-fondo-columna-azul">
+          <img src="images\burger_icon.png" id="burger">
+        </div>
+        <div class="navbar-options" style="display : none;">
+          <div class="element">
+            <ul class="menu">
+              <li> <a  href="#que-es">¿Qué es? </a> </li>              
+              <li> <a  href="#cirugia">Cirugías</a> </li>
+              <li> <a  href="#contacto">Contacto </a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
     <div class="hero-banner hero-banner-columna-background">               <!-- Hero Banner inicia-->
       <div class="upper-side">              <!-- Primera línea -->
         <div class="centro-color color-fondo-columna-azul">
@@ -31,14 +49,14 @@
       </div>
       <div class="centro-menu">             <!-- Segunda línea -->
         <ul>
-          <li> <a  href="#"> ¿Qué es? </a> </li>
-          <li> <a  href="#"> Cirugías </a> </li>
-          <li> <a  href="#"> Contacto </a> </li>
+          <li> <a  href="#que-es"> ¿Qué es? </a> </li>
+          <li> <a  href="#cirugia"> Cirugías </a> </li>
+          <li> <a  href="#contacto"> Contacto </a> </li>
         </ul>
       </div>
     </div>                               <!-- Hero Banner termina-->
     
-    <div id="que-es" class="">
+    <div id="limit" class="que-es">
       
         <div class="container-logo color-fondo-columna-gris">
           
@@ -50,13 +68,15 @@
             </div>
             <div id="pattern"></div>
             <div class="title-cirugias">
-            <div class="columna-title cirugias-title" onclick="slide_section('cirugias');">Cirugías</div>
+              <a name="cirugia"></a>
+              <div class="columna-title cirugias-title" onclick="slide_section('cirugias');">Cirugías</div>
             </div>
         </div>  
         <div class="descripcion">
           <div id="que-es-principal">
             <div class="pattern"></div>
             <div class="banner">
+              <a name="que-es"></a>
               <a href="#quees"><p class="columna-title title" onclick="slide_columna_que_es('que_es_columna_hidden');">¿Qué es?</p></a>
               <img src="images/columna/que_es_columna.png">
             </div>
@@ -69,9 +89,9 @@
               <br><br>Dedicado a la resolución de diversas patologías con las técnicas más refinadas y de mínima invasión de la columna vertebral en los segmentos cervicales, torácicos y lumbosacros. 
             </p>   
           </div>
-        </div>    
-      
+        </div>      
     </div>
+    
     <div id="cirugias" class="">
       <div class="banner">
         <div class="text">
