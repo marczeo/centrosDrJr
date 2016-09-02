@@ -46,14 +46,16 @@ $color-columna-gris : rgba(176, 178, 180, 1);
 
 
 //NEUROCIRUGÍA PEDIÁTRICA
-.color-neurocirugia-verde { color: rgba(150, 189, 14, 1); }
+$color-neurocirugia-verde : rgba(150, 189, 14, 1);
+.color-neurocirugia-verde { color: $color-neurocirugia-verde; }
 .color-neurocirugia-limon { color: rgba(217, 229, 131, 1); }
 .color-fondo-neurocirugia-verde { background-color: rgba(150, 189, 14, 1); }
 .color-fondo-neurocirugia-limon { background-color: rgba(217, 229, 131, 1); }
 .hero-banner-neurocirugia-background{ background-image   : url("../images/neurocirugia/inicio_neurocirugia_pediatrica.png"); }
 
 //NEURO ONCOLOGÍA
-.color-neuroncologia-azul { color: rgba(63, 157, 200, 1); }
+$color-neuroncologia-azul : rgba(63, 157, 200, 1);
+.color-neuroncologia-azul { color: $color-neuroncologia-azul; }
 .color-neuroncologia-menta { color: rgba(127, 204, 255, 1); }
 .color-neuroncologia-crema { color: rgba(255, 229, 198, 1); }
 .color-fondo-neuroncologia-azul { background-color: rgba(63, 157, 200, 1); }

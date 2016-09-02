@@ -1,3 +1,9 @@
+ul.lista_izquierda {
+    margin-left: 70px !important;
+}
+ul.lista_derecha {
+    margin-right: 70px !important;
+}
 .contenido_vascular {
 	background-color   : white;
     margin             : auto;
@@ -70,8 +76,8 @@
         	vertical-align: bottom;
         	margin-bottom: 20px;
         	&:before {
-        		top: 54%;
-        		height: 60%;
+        		top: 63%;
+    			height: 80%;
     		    left: 10%;
         	}
         	&:hover { &:before { left: 85%; }}
@@ -101,9 +107,10 @@
 				width: 55%;
 				p {
 					margin-top: 0;
+					margin-left: 70px;
 				}
 				&:before {
-					top: 30%;
+					top: 20%;
 				}
 			}
 			#descripcion_vascular {
@@ -184,6 +191,8 @@
 				margin: 0;
 				p {
 					margin: 0;
+				    padding-top: 42px;
+    				padding-bottom: 41px;
 				}
 			}
 		}
@@ -219,6 +228,7 @@
 	}
 	&:before{
 			background: $color-vascular-rojo;
+    		top: 53%;
 	}
 	&:hover{
 		&:before{
