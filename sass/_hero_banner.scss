@@ -60,6 +60,10 @@ div.hero-banner {
         margin-left: 70px;
         //Margen de toda la página
         width      : 20%;
+        display    : none;
+        @media screen and (min-width: $max_ipad_mediaquery) {
+            display     : block;
+        }
         ul {
             padding        : 0;
             margin         : 1em 0;
