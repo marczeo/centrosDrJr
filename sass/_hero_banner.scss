@@ -40,7 +40,20 @@ div.hero-banner {
                 padding       : 30px;
                 max-height    : 200px;
                 max-width     : 200px;
+                &:nth-child(2) {
+                    display: inline;
+                    @media screen and (min-width: $max_ipad_mediaquery) {
+                        display: none;
+                    }
+                }
+                &:nth-child(3) {
+                    display: none;
+                    @media screen and (min-width: $max_ipad_mediaquery) {
+                        display: inline;
+                    }
+                }
             }
+
         }
         div.centro-titulo {
             float       : right;
