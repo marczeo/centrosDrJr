@@ -11,13 +11,33 @@ div.hero-banner {
         height     : 100%;
         max-height : 270px;
         padding-top: 70px;
+        /*padding-top: 80%;
+        @media screen and (min-width: $max_ipad_mediaquery) {
+            max-height : 270px;
+            padding-top: 70px;
+        }*/
         div.centro-color {
             //Color fondo de centro
-            float           : left;
-            width           : 50%;
+            float           : right;
+            width           : 100%;
             max-width       : 350px;
             height          : 100%;
             text-align      : right;
+            margin-top      : 40%;
+            margin-right    : 30px;
+            @media screen and (min-width: $ipad_mediaquery) {
+                margin-right : 60px;
+                margin-top   : 50%;
+            }
+            @media screen and (max-width: $max_ipad_mediaquery) {
+                background-color : transparent;
+            }
+            @media screen and (min-width: $max_ipad_mediaquery) {
+                float        : left;
+                width        : 50%;
+                margin-top   : 0;
+                margin-right : 0;
+            }
             span {
                 display       : inline-block;
                 height        : 100%;
@@ -25,17 +45,42 @@ div.hero-banner {
             }
             img {
                 vertical-align: middle;
-                padding       : 30px;
                 max-height    : 200px;
                 max-width     : 200px;
+                &:nth-child(2) {
+                    display: inline;
+                    width: 70px;
+                    @media screen and (min-width: $ipad_mediaquery) {
+                        width: 120px;
+                    }
+                    @media screen and (min-width: $max_ipad_mediaquery) {
+                        display: none;
+                    }
+                }
+                &:nth-child(3) {
+                    display: none;
+                    @media screen and (min-width: $max_ipad_mediaquery) {
+                        display : inline;
+                        padding : 30px;
+                    }
+                }
             }
+
         }
         div.centro-titulo {
             float       : right;
             display     : table;
-            margin-right: 70px;
+            margin-right: 30px;
+            width       : 100%;
             //Margen de toda la página
             height      : 100%;
+            @media screen and (min-width: $ipad_mediaquery) {
+                margin-right: 60px;
+            }
+            @media screen and (min-width: $max_ipad_mediaquery) {
+                margin-right: 70px;
+                width: 49%;
+            }
             p {
                 color         : rgba(87, 89, 90, 1);
                 display       : table-cell;
@@ -45,13 +90,19 @@ div.hero-banner {
                 font-family   : Aspira;
                 font-weight   : 400;
                 font-style    : italic;
-                font-size     : 2.45rem;
+                font-size     : 1.45rem;
+                @media screen and (min-width: $ipad_mediaquery) {
+                    font-size : 2.45rem;
+                }
                 span {
                     //Color de centro
                     font-family: big-caslon-medium;
                     font-weight: 300;
                     font-style : normal;
-                    font-size  : 3.2rem;
+                    font-size  : 2.2rem;
+                    @media screen and (min-width: $ipad_mediaquery) {
+                        font-size : 3.2rem;
+                    }
                 }
             }
         }
@@ -60,6 +111,10 @@ div.hero-banner {
         margin-left: 70px;
         //Margen de toda la página
         width      : 20%;
+        display    : none;
+        @media screen and (min-width: $max_ipad_mediaquery) {
+            display     : block;
+        }
         ul {
             padding        : 0;
             margin         : 1em 0;
