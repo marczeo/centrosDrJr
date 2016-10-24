@@ -38,18 +38,39 @@
     		height: 10%;
     		background       : url('../images/pattern.png');
     		background-repeat: repeat;
+    		display: none;
+    		img.tablet{
+    			display: none;
+    		}
+    		@media (max-width: $max_ipad_mediaquery) {
+    			background: white;
+    			height:30%;
+    			border: 0;
+				border-bottom: 10px;
+				border-style: solid;
+				border-color: $color-columna-azul;
+			
+    			img.tablet{
+    				display: initial;
+    				float: right;
+    				max-height: 100%;
+    			}
+    		}
     	}
     	.svg_logo {
 		    display: flex;
-		    height: 60%;
+		    height: 50%;
     		svg {
 			    margin: auto;
     			width: 15%;
     			fill: $color-logo-jr;
     		}
+    		@media (max-width: $max_ipad_mediaquery) {
+    			height:50%;
+    		}
     	}
     	.title-cirugias{
-    		height: 30%;
+    		height: 50%;
     		background: white;
     		float: left;
     		display: flex;
@@ -57,10 +78,10 @@
     		border: 0;
 			border-bottom: 10px;
 			border-style: solid;
-			border-color: $color-columna-gris;
+			border-color: $color-columna-gris;			
     		.cirugias-title{
     			margin: auto 50px;
-    		}
+    		}    		
     	}
 	}	
 	.descripcion{
@@ -76,11 +97,32 @@
 			p.title{
 				position: absolute;				
 				left: 0;
-				transform: translate(10%,50%);
+				transform: translate(20%,50%);
+				margin-top: 100px;
 			}
-			img{
+			img.desktop{
 				float: right;
+				display: initial;
 			}
+			img.tablet{
+				display: none;
+			}
+			@media (max-width: $max_ipad_mediaquery) {
+				p.title{
+					position: absolute;
+					left: 0;
+					transform: translate(20%,50%);
+					margin-top: 100px;
+				}
+				img.desktop{
+					display: none;
+				}
+				img.tablet{
+					float: right;
+					display: initial;
+				}
+    		}
+
 		}
 		#que_es_columna_hidden{
 			display: none;
@@ -99,6 +141,9 @@
 				font-size: 1.5rem;
 				padding: 0px 80px;
 				line-height: 1.5;
+				@media (max-width: $max_ipad_mediaquery) {
+					padding: 0px 40px;
+				}
 			}
 		}
 	}
@@ -306,5 +351,10 @@
 .columna-title{
 	@include setTitle("Big Caslon",6rem,regular, $gris_centros);
 	color: $gris_centros;
-		
+	@media (max-width: $max_ipad_mediaquery) {
+		@include setTitle("Big Caslon",4rem,regular, $gris_centros);
+    }		
+}
+.columna-title:hover{
+	font-weight: normal;
 }
