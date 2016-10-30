@@ -16,7 +16,8 @@
 			    #titulo {
     				margin: 0;
     				p {
-    					margin: 40px 0 50px 0;
+    					text-align: left;
+    					margin: 40px 0 50px 100px;
     				}
     				&:before {
     					height: 80%;
@@ -28,7 +29,14 @@
 				    margin: -30px 30px 40px 70px;
 				    font-weight: 300;
 				    font-style: italic;
-				    font-size: 1.45rem;
+				    font-size: 1.25rem;
+				    hr {
+					    margin-top: 40px;
+					    width: 60px;
+					    height: 4px;
+					    margin-left: 0px;
+					    background-color: $gris_centros;
+				    }
     			}
     		}
     		#pattern_logo {
@@ -56,13 +64,14 @@
             max-width       : 1280px;
             height          : 100%;
             text-align      : left;
-            margin: -200px 0 0 0;
+            margin: -175px 0 0 0;
             #titulo_procedimientos {
             	width: 60%;
             	vertical-align: bottom;
             	&:before {
-            		top: 54%;
-            		height: 60%;
+            		top     : 54%;
+            		height  : 60%;
+            		left	: 150px;
             	}
             	&:hover { &:before { left: 100%; }}
             }
@@ -73,7 +82,10 @@
                 display       : inline-block;
                 height        : 100%;
                 margin: 0;
-                p { margin: 0 0 0 100px;}
+                p {
+                	margin: 0 70px 0 0;
+    				text-align: right;
+    			}
             }
             img {
                 vertical-align: middle;
@@ -102,10 +114,10 @@
 			    float: right;
 			    width: 49%;
 				ul {
-					margin: 0;
+					margin: 0 70px 0 0;
 					font-weight: 400;
 					font-style : normal;
-					font-size: 1.6rem;
+					font-size: 1.3rem;
 				}
 			}
 	    }
@@ -117,9 +129,10 @@
 		#contenido_contacto {
 			float: left;
 		    width: 50%;
-		    margin: 260px 0 0 0;
+		    margin: 22.5% 0 0 0;
 			p {
-				margin: 45px 0 45px 0;
+				text-align: left;
+				margin: 45px 0 45px 100px;
 			}
 		}
 		#imagen_procedimiento {
@@ -137,7 +150,7 @@
 	text-align: center;
 	position: relative;
 	font-family: Big Caslon Medium;
-	font-size: 6.4rem;
+	font-size: 4.9rem;
 	color: $gris_centros;
 	margin-top: 50px;
 	margin-bottom: 100px;

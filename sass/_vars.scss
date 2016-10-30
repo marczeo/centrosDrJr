@@ -1,10 +1,12 @@
 $gris_centros         : rgba(152, 153, 155, 1);
 $negro_centros        : rgba(64, 63, 65, 1);
-$max_mediaquery       : 1150px;
-$ipad_mediaquery      : 769px;
-$mobile_mediaquery    : 321px;
 $ocre                 : #9e8629;
 $gris                 : #3e3d3f;
-$max_ipad_mediaquery  : 800px;
+
+$mobile_mediaquery    : 321px;
 $max_mobile_mediaquery: 360px;
-$over_mediaquery : 1920px;
+$ipad_mediaquery      : 767px;
+$max_ipad_mediaquery  : 800px;
+$max_mediaquery       : 1150px;
+$max_width			  : 1280px;
+$over_mediaquery 	  : 1920px;
