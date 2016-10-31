@@ -24,24 +24,33 @@ div.hero-banner {
             height          : 100%;
             text-align      : right;
             margin-top      : 40%;
-            margin-right    : 30px;
+            /////////////
+            position: absolute;
+            margin-right: 0;
+            right: 2rem;
             @media screen and (min-width: $ipad_mediaquery) {
-                margin-right : 60px;
+                //margin-right : 60px;
                 margin-top   : 50%;
             }
             @media screen and (max-width: $max_ipad_mediaquery) {
                 background-color : transparent;
+                bottom: 25%;
             }
             @media screen and (min-width: $max_ipad_mediaquery) {
                 float        : left;
                 width        : 50%;
                 margin-top   : 0;
                 margin-right : 0;
+                ////////////
+                position: relative;
             }
             span {
                 display       : inline-block;
                 height        : 100%;
-                vertical-align: middle;
+                vertical-align: bottom;
+                @media screen and (min-width: $max_ipad_mediaquery+1) {
+                    vertical-align: middle;
+                }
             }
             img {
                 vertical-align: middle;
@@ -71,15 +80,27 @@ div.hero-banner {
             float       : right;
             display     : table;
             margin-right: 30px;
+            margin-top  : 1.5rem;
             width       : 100%;
+            ////////////////////////
+            position: absolute;
+            bottom: -80%;
+            margin-right: 0;
+            right: 2rem;
             //Margen de toda la página
             height      : 100%;
             @media screen and (min-width: $ipad_mediaquery) {
                 margin-right: 60px;
+                right: -2rem;
             }
             @media screen and (min-width: $max_ipad_mediaquery) {
                 margin-right: 70px;
                 width: 49%;
+                /////////////
+                position: relative;
+            }
+            @media screen and (min-width: $max_ipad_mediaquery+1) {
+                margin-top: 0;
             }
             p {
                 color         : rgba(87, 89, 90, 1);
@@ -93,6 +114,9 @@ div.hero-banner {
                 font-size     : 1.45rem;
                 @media screen and (min-width: $ipad_mediaquery) {
                     font-size : 2.45rem;
+                }
+                @media screen and (max-width: $max_ipad_mediaquery) {
+                    display   : block;
                 }
                 span {
                     //Color de centro
