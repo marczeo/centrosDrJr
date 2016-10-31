@@ -7,6 +7,9 @@
 		display: flex;
 		position: relative;
 	    background: url("../images/Texturas/marmol_small.png");
+	    @media screen and (max-width: $max_ipad_mediaquery) {
+                width : 100%;
+            }
 		.texto-que-es{
 			float: left;
 			width: 50%;
@@ -67,6 +70,10 @@
 				    fill: #9e8629;
 				    position: relative;
 				    top: 30%;
+				    @media screen and (max-width: $max_ipad_mediaquery) {
+		                width : 18%;
+		                top: 0%;
+		            }
 			    }
 		}
 	}
@@ -154,6 +161,9 @@
 					    height: 67%;
 						background: rgba(150, 189, 14, 1);
 						transition:ease 1s;
+						@media screen and (max-width: $max_ipad_mediaquery) {
+			                left : 20%;
+			            }
 					}
 				&:hover{
 					&:before{
@@ -254,6 +264,11 @@
 					    height: 12%;
 						background: rgba(150, 189, 14, 1);
 						transition:ease 1s;
+						@media screen and (max-width: $max_ipad_mediaquery) {
+                top : 17%;
+                height: 11%;
+                left : 55px;
+            }
 					}
 				&:hover{
 					&:before{
@@ -267,6 +282,10 @@
 				position: absolute;
 			    top: 100px;
 			    left: 450px;
+			    @media screen and (max-width: $max_ipad_mediaquery) {
+                top : 109px;
+                left: 45%;
+            }
 			}
 		}
 		.contenido-epilepsia{
@@ -282,6 +301,12 @@
 		max-width: 1280px;
 		position: relative;
 		.header-neuropediatrica{
+			.radiografia{
+				@media screen and (max-width: $max_ipad_mediaquery) {
+                width: 47%;
+            }
+				
+			}
 			.titulo-neuropediatrica{
 				margin: auto;
 	    		float: right;
@@ -293,6 +318,10 @@
 				letter-spacing: 1px;	
 				width: 50%;
 				color: #5E5E5E;
+				@media screen and (max-width: $max_ipad_mediaquery) {
+                font-size : 25pt;
+                width: 40%;
+            }
 				&:before{
 							content: "";
 						    position: absolute;
@@ -303,6 +332,9 @@
 						    height: 16%;
 							background: rgba(150, 189, 14, 1);
 							transition:ease 1s;
+							@media screen and (max-width: $max_ipad_mediaquery) {
+				               top : 18%;
+				            }
 						}
 					&:hover{
 						&:before{
@@ -313,6 +345,10 @@
 					position: absolute;
 				    right: 620px;
 				    top: 90px;
+				    @media screen and (max-width: $max_ipad_mediaquery) {
+                right : 49%;
+                top: 78px;
+            }
 				}
 				.bold{
 					font-family: Aspira;
@@ -373,6 +409,9 @@
 					    height: 67%;
 						background: #FFFFFF;
 						transition:ease 1s;
+						@media screen and (max-width: $max_ipad_mediaquery) {
+               			left : 20%;
+            }
 					}
 				&:hover{
 					&:before{
