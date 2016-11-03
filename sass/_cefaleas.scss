@@ -12,12 +12,12 @@
 		    background-position: center center;
     		#parrafo {
     			width: 50%;
-		    	padding-bottom: 180px;
+		    	padding-bottom: 11rem;
 			    #titulo {
     				margin: 0;
     				p {
     					text-align: left;
-    					margin: 40px 0 50px 100px;
+    					margin: 2.45rem 0 3.1rem 6.2rem;
     				}
     				&:before {
     					height: 80%;
@@ -26,15 +26,15 @@
     			}
     			#texto {
 				    display: none;
-				    margin: -30px 30px 40px 70px;
+				    margin: -1.875rem 1.875rem 2.45rem 4.4rem;
 				    font-weight: 300;
 				    font-style: italic;
 				    font-size: 1.25rem;
 				    hr {
-					    margin-top: 40px;
-					    width: 60px;
-					    height: 4px;
-					    margin-left: 0px;
+					    margin-top: 2.45rem;
+					    width: 3.75rem;
+					    height: 0.25rem;
+					    margin-left: 0;
 					    background-color: $gris_centros;
 				    }
     			}
@@ -64,14 +64,14 @@
             max-width       : 1280px;
             height          : 100%;
             text-align      : left;
-            margin: -175px 0 0 0;
+            margin: -10.9375rem 0 0 0;
             #titulo_procedimientos {
             	width: 60%;
             	vertical-align: bottom;
             	&:before {
             		top     : 54%;
             		height  : 60%;
-            		left	: 150px;
+            		left	: 9.375rem;
             	}
             	&:hover { &:before { left: 100%; }}
             }
@@ -83,7 +83,7 @@
                 height        : 100%;
                 margin: 0;
                 p {
-                	margin: 0 70px 0 0;
+                	margin: 0 4.4rem 0 0;
     				text-align: right;
     			}
             }
@@ -94,12 +94,12 @@
     }
     #procedimientos_hidden {
     	display: none;
-    	border-top : 6px solid $color-cefaleas-amarillo;
+    	border-top : 0.375rem solid $color-cefaleas-amarillo;
 	    #contenido_procedimientos {
 	    	display: flex;
 	    	position: relative;
 	    	width: 100%;
-			padding: 35px 0 35px 0;
+			padding: 2.2rem 0 2.2rem 0;
 			#isotipo_procedimientos {
 				float: left;
 			    margin: auto;
@@ -114,7 +114,7 @@
 			    float: right;
 			    width: 49%;
 				ul {
-					margin: 0 70px 0 0;
+					margin: 0 4.4rem 0 0;
 					font-weight: 400;
 					font-style : normal;
 					font-size: 1.3rem;
@@ -123,16 +123,16 @@
 	    }
 	}
 	#contenido_down {
-		border-top: 6px solid $color-cefaleas-amarillo;
+		border-top: 0.375rem solid $color-cefaleas-amarillo;
 		width: 100%;
-		height: 473px;
+		height: 29.5625rem;
 		#contenido_contacto {
 			float: left;
 		    width: 50%;
 		    margin: 22.5% 0 0 0;
 			p {
 				text-align: left;
-				margin: 45px 0 45px 100px;
+				margin: 2.75rem 0 2.75rem 6.25rem;
 			}
 		}
 		#imagen_procedimiento {
@@ -150,17 +150,17 @@
 	text-align: center;
 	position: relative;
 	font-family: Big Caslon Medium;
-	font-size: 4.9rem;
+	font-size: 2.2rem;
 	color: $gris_centros;
-	margin-top: 50px;
-	margin-bottom: 100px;
+	margin-top: 3.1rem;
+	margin-bottom: 6.2rem;
 	&:before{
 			content: "";
 		    position: absolute;
-		    left : 70px;
+		    left : 4.4rem;
 		    top: 50%;
 		    transform: translateY(-60%);
-		    width: 7px;
+		    width: 0.4375rem;
 		    height: 40%;
 			background: $color-cefaleas-amarillo;
 			transition:ease 1s;
