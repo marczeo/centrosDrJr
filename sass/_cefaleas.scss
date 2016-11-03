@@ -70,10 +70,20 @@
             	vertical-align: bottom;
             	&:before {
             		top     : 54%;
-            		height  : 60%;
-            		left	: 9.375rem;
+            		height  : 80%;
+            		left	: 7rem;
+				    @media screen and (min-width: $max_ipad_mediaquery) {
+				        left: 9.375rem;
+				    }
             	}
-            	&:hover { &:before { left: 100%; }}
+            	&:hover {
+            		&:before {
+            			left: 95%;
+					    @media screen and (min-width: $max_ipad_mediaquery) {
+					        left: 100%;
+					    }
+            		}
+            	}
             }
             #imagen {
             	width: 39%;
@@ -83,8 +93,11 @@
                 height        : 100%;
                 margin: 0;
                 p {
-                	margin: 0 4.4rem 0 0;
+                	margin: 0 3.125rem 0 0;
     				text-align: right;
+				    @media screen and (min-width: $max_ipad_mediaquery) {
+				        margin-right: 4.4rem;
+				    }
     			}
             }
             img {
@@ -154,7 +167,7 @@
 	color: $gris_centros;
 	margin-top: 3.1rem;
 	margin-bottom: 6.2rem;
-	&:before{
+	&:before {
 			content: "";
 		    position: absolute;
 		    left : 4.4rem;
@@ -170,4 +183,10 @@
 			left: 85%;
 		}
 	}
+    @media screen and (min-width: $ipad_mediaquery) {
+        font-size: 2.75rem;
+    }
+    @media screen and (min-width: $max_ipad_mediaquery) {
+        font-size: 4.9rem;
+    }
 }
