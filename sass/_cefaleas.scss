@@ -87,6 +87,15 @@
             }
             #imagen {
             	width: 39%;
+            	img {
+			        width: 15rem;
+				    @media screen and (min-width: $ipad_mediaquery) {
+				        width: 25rem;
+				    }
+				    @media screen and (min-width: $max_ipad_mediaquery) {
+				        width: 29.25rem;
+				    }
+            	}
             }
             div {
                 display       : inline-block;
