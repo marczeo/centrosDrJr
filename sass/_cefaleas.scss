@@ -8,10 +8,12 @@
 	        width: 100%;
 		    display: -webkit-flex;
 		    display: flex;
+		    flex-direction: column;
 		    background-image: url("../images/texturas/marmol_small.png");
 		    background-position: center center;
     		#parrafo {
-    			width: 50%;
+    			order: 2;
+    			width: 99%;
 		    	padding-bottom: 11rem;
 			    #titulo {
     				margin: 0;
@@ -26,7 +28,7 @@
     			}
     			#texto {
 				    display: none;
-				    margin: -1.875rem 1.875rem 2.45rem 4.4rem;
+				    margin: 0px 2rem 50px;
 				    font-weight: 300;
 				    font-style: italic;
 				    font-size: 1.25rem;
@@ -40,13 +42,11 @@
     			}
     		}
     		#pattern_logo {
-    			width: 50%;
+    			order: 1;
+    			width: 100%;
     			height: inherit;
-    			#pattern {
-    				width: 100%;
-    				height: 20%;
-    				background       : url('../images/pattern.png');
-    				background-repeat: repeat;
+    			#pattern-1 {
+    				display: none;
     			}
     			#svg_logo {
 				    display: flex;
@@ -58,21 +58,67 @@
     				}
     			}
     		}
+		    @media screen and (min-width: $ipad_mediaquery) {
+		        flex-direction: row;
+		        #parrafo {
+		        	order: 1;
+		        	width: 50%;
+		        	#texto {
+				    	margin: -1.875rem 1.875rem 2.45rem 4.4rem;
+		        	}
+		        }
+		        #pattern_logo {
+		        	order: 2;
+    				width: 50%;
+	    			#pattern-1 {
+	    				display: inline-block;
+	    			}
+		        }
+		    }
     	}
     	#imagen_procedimiento_header {
             width           : 100%;
             max-width       : 1280px;
             height          : 100%;
             text-align      : left;
-            margin: -10.9375rem 0 0 0;
+            margin: -14.25rem 0 0 0;
+            #imagen {
+            	width: 39%;
+            	img {
+			        width: 15rem;
+				    @media screen and (min-width: $ipad_mediaquery) {
+				        width: 25rem;
+				    }
+				    @media screen and (min-width: $max_ipad_mediaquery) {
+				        width: 29.25rem;
+				    }
+            	}
+            }
+            #pattern-2 {
+            	display: inline-block;
+			    @media screen and (min-width: $ipad_mediaquery) {
+			        display: none;
+			    }
+            }
             #titulo_procedimientos {
-            	width: 60%;
+            	width: 100%;
             	vertical-align: bottom;
+    			//border-top : 0.375rem solid $color-cefaleas-amarillo;
+			    @media screen and (min-width: $ipad_mediaquery) {
+			        width: 60%;
+    				border-top : none;
+			    }
             	&:before {
             		top     : 54%;
-            		height  : 80%;
-            		left	: 7rem;
+            		height  : 40%;
+            		left 	: 4rem;
+				    @media screen and (min-width: $ipad_mediaquery) {
+			        	height  : 40%;
+            			top     : 25%;
+            			left	: 7rem;
+				    }
 				    @media screen and (min-width: $max_ipad_mediaquery) {
+            			top     : 30%;
 				        left: 9.375rem;
 				    }
             	}
@@ -85,16 +131,16 @@
             		}
             	}
             }
-            #imagen {
-            	width: 39%;
-            }
             div {
                 display       : inline-block;
                 height        : 100%;
                 margin: 0;
                 p {
-                	margin: 0 3.125rem 0 0;
-    				text-align: right;
+    				text-align: center;
+				    @media screen and (min-width: $ipad_mediaquery) {
+				        text-align: right;
+                		margin: 0 3.125rem 5rem 0;
+				    }
 				    @media screen and (min-width: $max_ipad_mediaquery) {
 				        margin-right: 4.4rem;
 				    }
@@ -103,60 +149,125 @@
             img {
                 vertical-align: middle;
             }
+		    @media screen and (min-width: $max_ipad_mediaquery) {
+		        margin-top: -10.9375rem;
+		    }
     	}
     }
     #procedimientos_hidden {
     	display: none;
-    	border-top : 0.375rem solid $color-cefaleas-amarillo;
+    	border-top : none;
+	    @media screen and (min-width: $ipad_mediaquery) {
+	        margin-right: 4.4rem;
+    		border-top : 0.375rem solid $color-cefaleas-amarillo;
+	    }
 	    #contenido_procedimientos {
-	    	display: flex;
 	    	position: relative;
 	    	width: 100%;
-			padding: 2.2rem 0 2.2rem 0;
+			padding: 0 0 2.2rem 0;
+		    display: flex;
+    		flex-direction: column-reverse;
 			#isotipo_procedimientos {
-				float: left;
+				float: none;
 			    margin: auto;
+			    margin-top: 1.5rem;
 			    text-align: center;
 			    width: 49%;
 			    height: 100%;
 			    img {
 				    vertical-align: middle;
+				    @media screen and (max-width: $ipad_mediaquery - 1px) {
+				        max-width: 6.25rem;
+				    }
 			    }
 			}
 			#descripcion_procedimientos {
-			    float: right;
-			    width: 49%;
+			    float: none;
+			    width: 99%;
 				ul {
-					margin: 0 4.4rem 0 0;
+					margin: 0 2.2rem 0 0;
 					font-weight: 400;
 					font-style : normal;
-					font-size: 1.3rem;
+				    @media screen and (min-width: $ipad_mediaquery) {
+				        font-size: 1.3rem;
+				    }
+				    @media screen and (min-width: $max_ipad_mediaquery) {
+				        margin-right: 4.4rem;
+				    }
 				}
 			}
+		    @media screen and (min-width: $ipad_mediaquery) {
+		        display: flex;
+    			flex-direction: row;
+				padding: 2.2rem 0 2.2rem 0;
+		        #isotipo_procedimientos {
+		        	float: left;
+		        	margin-top: auto;
+		        }
+		        #descripcion_procedimientos {
+		        	float: right;
+			    	width: 49%;
+		        }
+		    }
 	    }
 	}
 	#contenido_down {
+		position: relative;
 		border-top: 0.375rem solid $color-cefaleas-amarillo;
 		width: 100%;
-		height: 29.5625rem;
+		height: 20rem;
+	    @media screen and (min-width: $max_ipad_mediaquery) {
+	        margin-right: 29.5625rem;
+	    }
 		#contenido_contacto {
+			position: absolute;
+    		bottom: 0;
 			float: left;
-		    width: 50%;
-		    margin: 22.5% 0 0 0;
+		    width: 100%;
+		    margin: 0;
+		    &:before {
+				@media screen and (max-width: ($ipad_mediaquery) - 1px) {
+					left: 1rem;
+	    		}
+		    }
 			p {
 				text-align: left;
-				margin: 2.75rem 0 2.75rem 6.25rem;
+    			margin: 1.25rem 10%;
+				@media screen and (max-width: ($ipad_mediaquery) - 1px) {
+					font-size: 2.5rem;
+	    		}
 			}
+		    @media screen and (min-width: $ipad_mediaquery) {
+		        width: 50%;
+				p {
+					text-align: center;
+					margin: 2.75rem 0;
+				}
+		    }
 		}
 		#imagen_procedimiento {
 			float: right;
-		    width: 50%;
-		    height: 100%;
+		    width: 100%;
+		    height: 99%;
 			background-image: url("../images/cefaleas/procedimientos_cefaleas.png");
 		    background-position: center center;
 		    background-size    : cover;
+		    @media screen and (min-width: $ipad_mediaquery) {
+		        width: 50%;
+		    	height: 100%;
+		    }
 		}
 	}
+}
+
+.pattern-cefaleas {
+	width: 100%;
+	height: 7.5vh !important;
+	background       : url('../images/pattern.png');
+	background-repeat: repeat;
+    @media screen and (min-width: $ipad_mediaquery) {
+    	height: 20% !important;
+    }
 }
 
 .title{
