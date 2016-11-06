@@ -1,8 +1,8 @@
 ul.lista_izquierda {
-    margin-left: 70px !important;
+    margin-left: 4.4rem !important;
 }
 ul.lista_derecha {
-    margin-right: 70px !important;
+    margin-right: 4.4rem !important;
 }
 .contenido_vascular {
 	background-color   : white;
@@ -32,7 +32,7 @@ ul.lista_derecha {
     			}
     			#texto {
 				    display: none;
-				    margin: -30px 30px 40px 70px;
+				    margin: -30px 30px 40px 4.4rem;
 				    font-weight: 300;
 				    font-style: italic;
 				    font-size: 1.25rem;
@@ -110,13 +110,13 @@ ul.lista_derecha {
 	    	display: flex;
 	    	position: relative;
 	    	width: 100%;
-			padding: 70px 0;
+			padding: 4.4rem 0;
 			#que_es_vascular {
 				margin-top: 0;
 				width: 49%;
 				p {
 					margin-top: 0;
-					margin-left: 70px;
+					margin-left: 4.4rem;
 				}
 				&:before {
 					top: 26.5%;
@@ -155,7 +155,7 @@ ul.lista_derecha {
 	    #contenido_imagen_header {
 	    	background-color: $color-vascular-rojo;
 	    	color 			: white;
-	    	padding 		: 35px 0;
+	    	padding 		: 2.2rem 0;
 	    	display: flex;
 	    	position: relative;
 	    	#img_cirugias_2 {
@@ -170,7 +170,7 @@ ul.lista_derecha {
 				margin: 0;
 				#title_nervioso {
 					margin-left: 30px;
-   					margin-right: 70px;
+   					margin-right: 4.4rem;
    					margin-bottom: 0;
 					vertical-align: middle;
 					color: white;
@@ -281,7 +281,6 @@ ul.lista_derecha {
 		}
 	}
 }
-
 .title_vascular{
 	p.italic {
 		display: inline-block;
