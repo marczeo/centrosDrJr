@@ -134,10 +134,11 @@
     		border-top : 0.375rem solid $color-cefaleas-amarillo;
 	    }
 	    #contenido_procedimientos {
-	    	display: block;
 	    	position: relative;
 	    	width: 100%;
 			padding: 0 0 2.2rem 0;
+		    display: flex;
+    		flex-direction: column-reverse;
 			#isotipo_procedimientos {
 				float: none;
 			    margin: auto;
@@ -147,6 +148,9 @@
 			    height: 100%;
 			    img {
 				    vertical-align: middle;
+				    @media screen and (max-width: $ipad_mediaquery - 1px) {
+				        max-width: 6.25rem;
+				    }
 			    }
 			}
 			#descripcion_procedimientos {
@@ -166,6 +170,7 @@
 			}
 		    @media screen and (min-width: $ipad_mediaquery) {
 		        display: flex;
+    			flex-direction: row;
 				padding: 2.2rem 0 2.2rem 0;
 		        #isotipo_procedimientos {
 		        	float: left;
