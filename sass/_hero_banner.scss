@@ -10,32 +10,98 @@ div.hero-banner {
         width      : 100%;
         height     : 100%;
         max-height : 270px;
-        padding-top: 70px;
+        padding-top: 4.4rem;
+        /*padding-top: 80%;
+        @media screen and (min-width: $max_ipad_mediaquery) {
+            max-height : 270px;
+            padding-top: 70px;
+        }*/
         div.centro-color {
             //Color fondo de centro
-            float           : left;
-            width           : 50%;
+            float           : right;
+            width           : 100%;
             max-width       : 350px;
             height          : 100%;
             text-align      : right;
+            margin-top      : 40%;
+            /////////////
+            position: absolute;
+            margin-right: 0;
+            right: 2rem;
+            @media screen and (min-width: $ipad_mediaquery) {
+                //margin-right : 60px;
+                margin-top   : 50%;
+            }
+            @media screen and (max-width: $max_ipad_mediaquery) {
+                background-color : transparent;
+                bottom: 25%;
+            }
+            @media screen and (min-width: $max_ipad_mediaquery) {
+                float        : left;
+                width        : 50%;
+                margin-top   : 0;
+                margin-right : 0;
+                ////////////
+                position: relative;
+            }
             span {
                 display       : inline-block;
                 height        : 100%;
-                vertical-align: middle;
+                vertical-align: bottom;
+                @media screen and (min-width: $max_ipad_mediaquery+1) {
+                    vertical-align: middle;
+                }
             }
             img {
                 vertical-align: middle;
-                padding       : 30px;
                 max-height    : 200px;
                 max-width     : 200px;
+                &:nth-child(2) {
+                    display: inline;
+                    width: 4.4rem;
+                    @media screen and (min-width: $ipad_mediaquery) {
+                        width: 7.35rem;
+                    }
+                    @media screen and (min-width: $max_ipad_mediaquery) {
+                        display: none;
+                    }
+                }
+                &:nth-child(3) {
+                    display: none;
+                    @media screen and (min-width: $max_ipad_mediaquery) {
+                        display : inline;
+                        padding : 30px;
+                    }
+                }
             }
+
         }
         div.centro-titulo {
             float       : right;
             display     : table;
-            margin-right: 70px;
+            margin-right: 1.9rem;
+            margin-top  : 1.5rem;
+            width       : 100%;
+            ////////////////////////
+            position: absolute;
+            bottom: -80%;
+            margin-right: 0;
+            right: 2rem;
             //Margen de toda la página
             height      : 100%;
+            @media screen and (min-width: $ipad_mediaquery) {
+                margin-right: 3.8rem;
+                right: -2rem;
+            }
+            @media screen and (min-width: $max_ipad_mediaquery) {
+                margin-right: 4.4rem;
+                width: 49%;
+                /////////////
+                position: relative;
+            }
+            @media screen and (min-width: $max_ipad_mediaquery+1) {
+                margin-top: 0;
+            }
             p {
                 color         : rgba(87, 89, 90, 1);
                 display       : table-cell;
@@ -45,21 +111,34 @@ div.hero-banner {
                 font-family   : Aspira;
                 font-weight   : 400;
                 font-style    : italic;
-                font-size     : 2.45rem;
+                font-size     : 1.45rem;
+                @media screen and (min-width: $ipad_mediaquery) {
+                    font-size : 2.45rem;
+                }
+                @media screen and (max-width: $max_ipad_mediaquery) {
+                    display   : block;
+                }
                 span {
                     //Color de centro
                     font-family: big-caslon-medium;
                     font-weight: 300;
                     font-style : normal;
-                    font-size  : 3.2rem;
+                    font-size  : 2.2rem;
+                    @media screen and (min-width: $ipad_mediaquery) {
+                        font-size : 3.2rem;
+                    }
                 }
             }
         }
     }
     div.centro-menu {
-        margin-left: 70px;
+        margin-left: 4.4rem;
         //Margen de toda la página
         width      : 20%;
+        display    : none;
+        @media screen and (min-width: $max_ipad_mediaquery) {
+            display     : block;
+        }
         ul {
             padding        : 0;
             margin         : 1em 0;
@@ -81,7 +160,7 @@ div.hero-banner {
         max-width: 1280px;
         img{
             float: right;
-            margin-right: 70px;
+            margin-right: 4.4rem;
         }
     }
 }
