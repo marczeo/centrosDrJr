@@ -168,7 +168,7 @@ ul.lista_derecha {
 	    		width: 49%;
 	    		height: 100%;
 				margin: 0;
-				#title_nervioso {    
+				#title_nervioso {
 					margin-left: 30px;
    					margin-right: 70px;
    					margin-bottom: 0;
@@ -195,38 +195,89 @@ ul.lista_derecha {
 	    	}
 	    }
 	}
-	#contenido_down_vascular {
-		border-top: 6px solid $color-vascular-rojo;
+	#contenido_isotipo_vascular-1 {
+		display: block;
+		height: 15rem;
 		width: 100%;
-		height: 473px;
-		#contenido_left {
+		border-top: 6px solid $color-vascular-rojo;
+	    background-image: url("../images/vascular/isotipo_vascular.png");
+	    background-position: center center;
+		background-repeat: no-repeat;
+	    background-size: 30%;
+		@media screen and (min-width: $ipad_mediaquery) {
+			display: none;
+		}
+	}
+	#contenido_down_vascular {
+		position: relative;
+		border-top: none;
+		width: 100%;
+		height: 20rem;
+		#contenido_isotipo_vascular-2 {
+			display: none;
+			position: absolute;
+			top: 0;
 			float: left;
-		    width: 50%;
+			height: 50%;
+			width: 50%;
+		    background-image: url("../images/vascular/isotipo_vascular.png");
+		    background-position: center center;
+			background-repeat: no-repeat;
+		    background-size: 25%;
+			@media screen and (min-width: $ipad_mediaquery) {
+				display: block;
+    		}
+			@media screen and (min-width: $max_ipad_mediaquery) {
+				background-size: 17.5%;
+    		}
+		}
+		#contenido_contacto {
+			position: absolute;
+    		bottom: 0;
+			float: left;
+			height: initial;
+		    width: 100%;
 		    margin: 0;
-			#contenido_isotipo_vascular {
-				height: 290px;
-			    background-image: url("../images/vascular/isotipo_vascular.png");
-			    background-position: center center;
-    			background-repeat: no-repeat;
+		    &:before {
+				@media screen and (max-width: ($ipad_mediaquery) - 1px) {
+					left: 1rem;
+	    		}
+		    }
+			p {
+				text-align: left;
+    			margin: 1.25rem 10%;
+				@media screen and (max-width: ($ipad_mediaquery) - 1px) {
+					font-size: 2.5rem;
+	    		}
 			}
-			#contenido_contacto {
-				margin: 0;
+		    @media screen and (min-width: $ipad_mediaquery) {
+		        width: 50%;
+				height: 50%;
 				p {
-					margin: 0;
-				    padding-top: 42px;
-    				padding-bottom: 41px;
-    				text-align: left;
-    				margin-left: 110px;
+					text-align: center;
+					margin: 3.125rem 0;
 				}
-			}
+		    }
+		    @media screen and (min-width: $max_ipad_mediaquery) {
+				p {
+					margin: 1.95rem 0;
+				}
+		    }
 		}
 		#imagen_procedimiento {
 			float: right;
-		    width: 50%;
-		    height: 100%;
+		    width: 100%;
+		    height: 99%;
 			background-image: url("../images/vascular/cirugias_vascular.png");
 		    background-position: center center;
 		    background-size    : cover;
+		    @media screen and (min-width: $ipad_mediaquery) {
+		        width: 50%;
+		    	height: 100%;
+		    }
+		}
+	    @media screen and (min-width: $ipad_mediaquery) {
+			border-top: 6px solid $color-vascular-rojo;
 		}
 	}
 }
