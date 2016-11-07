@@ -29,7 +29,10 @@
 	max-width: $max_width;
 	margin: auto;
 	display: flex;
-	
+	@media (max-width: $max_mobile_mediaquery)
+	{
+		display: block;
+	}
 	.container-logo{
 		width: 50%;
 		height: inherit;
@@ -83,6 +86,41 @@
     			margin: auto 50px;
     		}    		
     	}
+    	.title-cirugias-mobile{
+    		display: none;
+    	}
+    	@media (max-width: $max_ipad_mediaquery)
+		{
+			.title-cirugias-mobile{
+				display: none;
+			}
+		}
+    	@media (max-width: $max_mobile_mediaquery)
+		{
+			width:100%;
+			#pattern{
+				display: none;
+			}
+			.title-cirugias{
+				display: none;
+			}
+			.title-cirugias-mobile{
+				display: initial;
+	    		background: white;
+	    		float: left;
+	    		display: flex;
+	    		width: 100%;
+	    		border: 0;
+				border-bottom: 10px;
+				border-style: solid;
+				border-color: $color-columna-gris;
+				padding: 30px 0;		
+    			.cirugias-title{
+    				margin: auto 50px;
+    				margin-left: 30px;
+    			}    		
+    		}
+		}
 	}	
 	.descripcion{
 		width: 50%;
@@ -107,6 +145,9 @@
 			img.tablet{
 				display: none;
 			}
+			img.mobile{
+				display: none;
+			}
 			@media (max-width: $max_ipad_mediaquery) {
 				p.title{
 					position: absolute;
@@ -120,6 +161,27 @@
 				img.tablet{
 					float: right;
 					display: initial;
+				}
+				img.mobile{
+					display: none;
+				}
+    		}
+    		@media (max-width: $max_mobile_mediaquery) {
+				p.title{
+					position: absolute;
+					left: 0;
+					transform: translate(10%,0%);
+					margin-top: 90px;
+				}
+				img.desktop{
+					display: none;
+				}
+				img.tablet{
+					display: none;
+				}
+				img.mobile{
+					display: initial;
+					float: right;
 				}
     		}
 
@@ -146,6 +208,14 @@
 				}
 			}
 		}
+		@media (max-width: $max_mobile_mediaquery)
+		{
+			width: 100%;
+			max-width: $max_mobile_mediaquery;
+			.pattern{
+				display: none;
+			}
+		}
 	}
 }
 #cirugias{
@@ -159,10 +229,20 @@
 		padding-top: 50px;
 		.text{
 			width: 50%;
+			@media (max-width: $max_mobile_mediaquery)
+			{
+				width: 100%;
+			}
+			
 			text-align: center;				
 			float: left;
 			p.title{
 				@include setTitle("Aspira",3.5rem,400, $gris_centros);
+				@media (max-width: $max_mobile_mediaquery)
+				{
+					@include setTitle("Aspira",1.5rem,400, $gris_centros);
+					margin: 0 20px;
+				}
 				font-style: italic;
 				color: $negro_centros;
 				text-align: left;
@@ -194,6 +274,29 @@
 				
 			}
 		}
+		.isotipo-mobile{
+			display: none;
+		}
+		@media (max-width: $max_mobile_mediaquery)
+		{
+			.isotipo{display: none;}
+			.isotipo-mobile{
+				width: 100%;
+				height: 100%;
+				float: left;
+				display: flex;
+				.imagen{
+					width: 100%;
+					margin: auto 50px;
+					text-align: center;
+					img{
+						padding: 20px 0;
+						width: 40%;
+					}
+					
+				}
+			}
+		}
 	}
 	.content{
 		max-width: $max_width;
@@ -205,6 +308,9 @@
 		}
 		.parte-1{
 			display: flex;
+			@media (max-width: $max_mobile_mediaquery){
+				display: block;
+			}
 			.imagen{
 				background: $color-columna-azul;
 				width: 50%;
@@ -213,8 +319,38 @@
 					img{width: 100%;}
 				}
 			}
+			.imagen-mobile{
+				display: none;
+			}
+			@media (max-width: $max_mobile_mediaquery) {
+				.imagen{
+					display: none;
+				}
+				.imagen-mobile{
+					display: initial;
+					background: white;
+					width: 100%;
+					float: left;
+					@media (max-width: $max_mobile_mediaquery) {
+						img{
+							width: 100%;
+							border: 0;
+						    border-bottom: 5px;
+						    border-style: solid;
+						    border-color: $color-columna-azul;
+						}
+					}
+				}
+			}
 			.contenido-columna{
 				width: 50%;
+				@media (max-width: $max_mobile_mediaquery) {
+					width: 100%;
+					padding-right: 10px;
+				    padding-top: 20px;
+				    padding-bottom: 20px;
+				}
+				padding:0px;
 				background: $color-columna-azul;				
 				color: white;
 				display: flex;
@@ -226,16 +362,22 @@
 					@media (max-width: $max_ipad_mediaquery) {
 						font-size: 1.1rem;
 					}
+					@media (max-width: $max_mobile_mediaquery) {
+						font-size: 0.9rem;
+					}
 				}
 			}
 		}
 		.parte-2{
 			max-width: $max_width;
 			display: flex;
+			@media (max-width: $max_mobile_mediaquery) {
+				display: block;
+			}
 			margin: auto;
 			padding: 50px 0;
 			.col-2{
-				display: flex;
+				display: flex;				
 				width: 50%;
 				float: left;
 				max-width: $max_mediaquery/2;				
@@ -248,19 +390,36 @@
 					@media (max-width: $max_ipad_mediaquery) {
 						font-size: 1.1rem;
 					}
+					@media (max-width: $max_mobile_mediaquery){
+						font-size:0.9rem;
+					}
 				}
 				&:first-child{
 					padding-right: 20px;
 					margin-left: auto;
+					@media (max-width: $max_mobile_mediaquery){
+						padding-top: 20px;
+					}
 				}
 				&:last-child {
 					padding-left: 7px;
 					margin-right: auto;
+					@media (max-width: $max_mobile_mediaquery){
+						padding-left: 0;
+						padding-bottom: 20px;
+					}
+				}
+				@media (max-width: $max_mobile_mediaquery) {
+					display: block;
+					width: 100%;
 				}
 			}
 		}
 		.parte-3{
 			display: flex;
+			@media (max-width: $max_mobile_mediaquery){
+				display: block
+			}
 			max-width: $max_width;
 			margin-left: auto;
 			border: 0;
@@ -269,6 +428,7 @@
 			border-top-color: $color-columna-azul;			
 
 			.imagen{
+				display: initial;
 				width: 50%;
 				float: left;
 				max-width: $max_width/2;
@@ -301,6 +461,36 @@
 		    		float: right;
     			}
 			}
+			.imagen-mobile{display: none;}
+			@media (max-width: $max_mobile_mediaquery) {
+				.imagen{display: none;}
+				.imagen-mobile{
+					display: initial;
+					width: 100%;
+					float: left;
+					max-width: $max_width/2;
+					.img-content{
+						width: 100%;
+						img.desktop{
+							display: initial;
+							width: 100%;
+							float: right;
+						}
+						img.mobile{						
+							display: initial;
+							width: 100%;
+							float: right;
+						}						
+					}
+					.pattern {
+			    		width: 100%;
+			    		height: 80px;
+			    		background       : url('../images/pattern.png');
+			    		background-repeat: repeat;
+			    		float: right;
+	    			}
+				}
+			}
 			.contenido-columna{
 				display: flex;
 				width: 50%;
@@ -324,6 +514,13 @@
 					@media (max-width: $max_ipad_mediaquery) {
 						font-size: 1.1rem;
 					}
+					@media (max-width: $max_mobile_mediaquery){
+						font-size:0.9rem;
+						padding: 20px 30px;
+					}
+				}
+				@media (max-width: $max_mobile_mediaquery){
+					width:100%;
 				}
 			}
 		}		
@@ -377,7 +574,18 @@
     height: 85px;
     width: 100%;
     max-width: $max-width/2;
-    float: left;
+    float: left;    
+}
+.pattern-mobile
+{	
+    @media (max-width: $max_mobile_mediaquery) {
+    	height: 60px;
+    	background       : url('../images/pattern.png');
+	    background-repeat: repeat;
+	    width: 100%;
+	    max-width: $max-width/2;
+	    float: left;
+    }
 }
 .columna-title{
 	@include setTitle("Big Caslon",6rem,regular, $gris_centros);

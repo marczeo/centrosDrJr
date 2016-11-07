@@ -1,6 +1,8 @@
 var $window = $(window);
 var $max_ipad_mediaquery = 800;
+var $max_mobile_mediaquery = 360;
 var mq = window.matchMedia( "(min-width: "+$max_ipad_mediaquery+"px)" );
+var mq_mobile = window.matchMedia( "(min-width: "+$max_mobile_mediaquery+"px)" );
 $(document).ready(function() {
     init_map();
 });
@@ -46,6 +48,12 @@ function slide_columna_que_es(section){
         } else {
           $('.title-cirugias').css('height', '20%');
         }
+        if (mq_mobile.matches) {
+          // window width is at least 500px
+        } else {
+          $('#pattern').css('display', 'none'); 
+        }
+
     }
     $("#" + section).slideToggle();
 
