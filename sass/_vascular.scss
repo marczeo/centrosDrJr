@@ -158,16 +158,59 @@
 	    	position: relative;
 	    	flex-direction: column;
 	    	width: 100%;
-			padding: 4.4rem 0;
+			padding: 0;
+		    @media screen and (min-width: $ipad_mediaquery) {
+		    	padding: 4.4rem 0;
+		    }
 			#que_es_vascular {
+				padding-bottom: 1.25rem;
 				margin-top: 0;
-				width: 49%;
+				width: 100%;
+				color: white;
+				background-color: $color-vascular-rojo;
+				span {
+					color: white;
+				}
+			    @media screen and (max-width: $ipad_mediaquery) {
+			    	margin-bottom: 0;
+			    }
+			    @media screen and (min-width: $ipad_mediaquery) {
+			    	padding-bottom: 0;
+			    	width: 49%;
+			    	color: $gris_centros;
+					background-color: white;
+					span {
+						color: $gris_centros;
+					}
+			    }
 				p {
-					margin-top: 0;
+					font-size: 2rem;
+    				display: block;
+					margin-top: 3rem;
 					margin-left: 4.4rem;
+				    @media screen and (min-width: $ipad_mediaquery) {
+				    	font-size: 3.125rem;
+				    	display: inline-block;
+				    	width: 60%;
+				    }
+				    @media screen and (min-width: $max_ipad_mediaquery) {
+				    	width: initial;
+						margin-top: 0;
+				    }
 				}
 				&:before {
-					top: 26.5%;
+					top: 45%;
+					left: 3rem;
+					background: white;
+				    @media screen and (min-width: $ipad_mediaquery) {
+						top: 33.5%;
+						left: 3rem;
+						background: $color-vascular-rojo;
+				    }
+				    @media screen and (min-width: $max_ipad_mediaquery) {
+				    	top: 26.5%;
+						left: 4.4rem;
+				    }
 				}
 			}
 			#isotipo_cirugias {
@@ -364,6 +407,19 @@
 		margin-left: 30px;
 	    left: 50%;
 	    transform: translate(-50%, -50%);
+	    &.uno {
+	    	display: block;
+	    	margin: 0 auto 0 50%;
+	    	@media screen and (min-width: $ipad_mediaquery) {
+	    		display: none;
+	    	}
+	    }
+	    &.dos {
+	    	display: none;
+	    	@media screen and (min-width: $ipad_mediaquery) {
+	    		display: inline;
+	    	}
+	    }
 	}
 	span {
 		color: rgba(94, 94, 94, 1);
