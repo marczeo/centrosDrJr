@@ -44,6 +44,15 @@ $color-logo-jr		: rgba(193, 193, 195, 1);
 .hero-banner-columna-background{
 	background-image   : url("../images/columna/inicio_columna_alta_calidad.png");
 	background-position: right center;
+	@media (max-width: $max_mobile_mediaquery)
+	{
+		background-image   : url("../images/columna/mobile/inicio.png");
+	}
+	@media (max-width: $max_ipad_mediaquery)
+	{
+		background-image   : url("../images/columna/tablet/inicio.png");
+		background-position: center center;
+	}
 }
 
 
