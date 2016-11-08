@@ -47,11 +47,26 @@ $color-logo-jr		: rgba(193, 193, 195, 1);
 	@media (max-width: $max_mobile_mediaquery)
 	{
 		background-image   : url("../images/columna/mobile/inicio.png");
+		div.upper-side div.centro-color{
+			bottom: 80% !important;
+			right: 4rem !important;
+		}
+		div.upper-side div.centro-titulo{
+			bottom: -22% !important;
+			right: 4rem !important;
+		}
+		div.upper-side div.centro-titulo p{
+			font-size: 1rem !important;
+			span{
+				font-size: 1.4rem !important;
+			}
+		}
 	}
 	@media (max-width: $max_ipad_mediaquery)
 	{
 		background-image   : url("../images/columna/tablet/inicio.png");
 		background-position: center center;
+
 	}
 }
 
