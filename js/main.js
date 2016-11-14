@@ -6,6 +6,8 @@ $(document).ready(function() {
 
 function slide_section(section) {
     $("#" + section).slideToggle();
+    if(section == "texto_movil")
+        $(".pattern-neurocirugia").slideToggle();
 }
 function slide_cirugia_pediatrica(section) {
 	$(".ribbon").slideToggle();
