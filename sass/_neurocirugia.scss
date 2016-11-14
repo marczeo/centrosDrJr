@@ -445,11 +445,14 @@
 			width: 50%;
 			color: #5E5E5E;
 			@media (max-width: $max_mobile_mediaquery)
-		{
-			margin-left : 0;
-			width: 100%;
-			font-size: 1.5625rem;
-		}
+			{
+				margin-left : 1.5625rem;
+				width: 100%;
+				font-size: 1.5625rem;
+				br{
+					display: none;
+				}
+			}
 			&:before{
 						content: "";
 					    position: absolute;
@@ -461,10 +464,17 @@
 						background: rgba(150, 189, 14, 1);
 						transition:ease 1s;
 						@media screen and (max-width: $max_ipad_mediaquery) {
-                top : 17%;
-                height: 11%;
-                left : 55px;
-            }
+			                top : 17%;
+			                height: 11%;
+			                left : 55px;
+			            }
+			            @media (max-width: $max_mobile_mediaquery)
+			            {
+			            	top : 8%;
+			            	height : 10%;
+			            	left : 14px;
+			            	width : 3px;
+			            }
 					}
 				&:hover{
 					&:before{
@@ -482,6 +492,10 @@
                 top : 109px;
                 left: 45%;
             }
+            @media (max-width: $max_mobile_mediaquery)
+            {
+            	display : none;
+            }
 			}
 		}
 		.contenido-epilepsia{
@@ -496,6 +510,10 @@
 				font-size: .6825rem;
 				width: 100%;
 				background-color: rgba(150, 189, 14, 1);
+				color: #FFFFFF;
+				padding-bottom: 10px;
+			    padding-top: 10px;
+			    margin-top: 10px;
 			}
 		}
 	}
@@ -508,7 +526,10 @@
 				@media screen and (max-width: $max_ipad_mediaquery) {
                 width: 47%;
             }
-				
+				@media (max-width: $max_mobile_mediaquery)
+			{
+				display : none;
+			}
 			}
 			.titulo-neuropediatrica{
 				margin: auto;
@@ -525,6 +546,14 @@
                 font-size : 25pt;
                 width: 40%;
             }
+            @media (max-width: $max_mobile_mediaquery)
+			{
+				width : 100%;
+				font-size : 1.5625rem;
+				float : none;
+				margin-left : 3rem;
+				text-align : left;
+			}
 				&:before{
 							content: "";
 						    position: absolute;
@@ -538,6 +567,13 @@
 							@media screen and (max-width: $max_ipad_mediaquery) {
 				               top : 18%;
 				            }
+				            @media (max-width: $max_mobile_mediaquery)
+				            {
+				            	top: 13%;
+							    height: 23%;
+							    width: 3px;
+							    left: 24px;
+				            }
 						}
 					&:hover{
 						&:before{
@@ -548,10 +584,14 @@
 					position: absolute;
 				    right: 620px;
 				    top: 90px;
-				    @media screen and (max-width: $max_ipad_mediaquery) {
-                right : 49%;
-                top: 78px;
-            }
+					@media screen and (max-width: $max_ipad_mediaquery) {
+				                right : 49%;
+				                top: 78px;
+	            		}
+	            		@media (max-width: $max_mobile_mediaquery)
+	            		{
+	            			display : none;
+	            		}
 				}
 				.bold{
 					font-family: Aspira;
@@ -559,10 +599,26 @@
 
 			}
 		}
+		.radiografia-movil
+		{
+			display: none;
+			@media (max-width: $max_mobile_mediaquery)
+			{
+				display: block !important;
+				margin-top: 20px;
+   				margin-bottom: 20px;
+   				width: 100%;
+			}
+
+		}
 		.contenido-neuropediatrica{
 			position: relative;
 			background: url("../images/Texturas/marmol_small.png");
 			display: flex;
+			@media (max-width: $max_mobile_mediaquery)
+			{
+				display: block;
+			}
 			.ul-left{
 				float: left;
 			}
@@ -578,6 +634,12 @@
 				margin-bottom: 50px;
 				padding-left: 70px;
     			padding-right: 90px;
+    			@media (max-width: $max_mobile_mediaquery)
+    			{
+    				font-size: .6875rem;
+    				margin-top: 10px;
+    				margin-bottom: 10px;
+    			}
     			li{
     				margin-bottom: 2px;
     			}
