@@ -1,5 +1,8 @@
 var $window = $(window);
-
+var $max_ipad_mediaquery = 800;
+var $max_mobile_mediaquery = 360;
+var mq = window.matchMedia( "(min-width: "+$max_ipad_mediaquery+"px)" );
+var mq_mobile = window.matchMedia( "(min-width: "+$max_mobile_mediaquery+"px)" );
 $(document).ready(function() {
     init_map();
 });
@@ -31,10 +34,26 @@ else{
 
 function slide_columna_que_es(section){
     if ($("#" + section).is(":visible")){
-        $('#que-es-principal').css('display', 'block');
+        $('#que-es-principal').css('display', 'block');        
+        $('#pattern').css('display', 'none'); 
+        $('.title-cirugias').css('height', '50%');
+        
     }
     else{
-        $('#que-es-principal').css('display', 'none');        
+        $('#que-es-principal').css('display', 'none');
+        $('#pattern').css('display', 'block');         
+        $('.title-cirugias').css('height', '40%');  
+        if (mq.matches) {
+          // window width is at least 500px
+        } else {
+          $('.title-cirugias').css('height', '20%');
+        }
+        if (mq_mobile.matches) {
+          // window width is at least 500px
+        } else {
+          $('#pattern').css('display', 'none'); 
+        }
+
     }
     $("#" + section).slideToggle();
 

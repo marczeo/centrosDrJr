@@ -2,13 +2,14 @@
 	width: 100%;
 	max-width: 1280px;
 	margin: auto;
+	display:none;
 	.navbar-fixed{
 		float: left;
-		    width: 50%;
-		    max-width: 350px;
-		    z-index: 9999;
-		    position: fixed !important;
-		    top: 0;
+		width: 50%;
+		max-width: 350px;
+		z-index: 9999;
+		position: fixed !important;
+		top: 0;
 		.f-navbar{
 		    /*background-color: #96bd0e;*/
 			img{
@@ -20,6 +21,15 @@
 			    filter: brightness(0) invert(1);
 			    -moz-filter: brightness(0) invert(1);
 			    cursor: pointer;
+			    @media (max-width: $max_mobile_mediaquery){
+					margin-left: 25px;
+					margin-top: 10px;
+			    	margin-bottom: 10px;
+				}
+				@media (max-width: $max_ipad_mediaquery)
+				{
+					margin-left: 95px;
+				}
 			}
 		}
 		.navbar-options{
@@ -46,7 +56,30 @@
 		    		}
 		    	}
 		    }
-		}}
+		     @media (max-width: $max_mobile_mediaquery){
+		     	padding-left: 0px;
+		     	font-size: 1.2rem;
+		     }
+		}
+		@media (max-width: $max_mobile_mediaquery){
+			top:60px;
+			width: 30%;
+		}
+		@media (max-width: $max_ipad_mediaquery)
+		{
+			top: 60px;
+			width: 30%;
+		}
+	}
+	@media (max-width: $max_mobile_mediaquery){
+		display: block;
+	}
+	@media (max-width: $max_ipad_mediaquery)
+	{
+
+		display: block;
+	}
+
 }
 .navbar-show{
 	display: block !important;
