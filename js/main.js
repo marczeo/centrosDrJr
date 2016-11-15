@@ -13,7 +13,9 @@ function slide_cirugia_pediatrica(section) {
 	$(".ribbon").slideToggle();
     $(".right-cirugia").slideToggle();
     $(".icon").slideToggle();
+    if($( window ).width() > 350)
     $(".contacto-50").slideToggle();
+
     $(".title-background").slideToggle();
 
     if ($("#" + section).is(":visible")) { 
@@ -29,6 +31,7 @@ else{
     $('.cirugias').append('<style class = "destroyme">.cirugias::before{width : 50%;}</style>');
 }
     $("#" + section).slideToggle();
+    
 }
 
 function slide_columna_que_es(section){
