@@ -1,9 +1,3 @@
-ul.lista_izquierda {
-    margin-left: 70px !important;
-}
-ul.lista_derecha {
-    margin-right: 70px !important;
-}
 .contenido_vascular {
 	background-color   : white;
     margin             : auto;
@@ -14,16 +8,18 @@ ul.lista_derecha {
 	        width: 100%;
 		    display: -webkit-flex;
 		    display: flex;
+		    flex-direction: column;
 		    background-image: url("../images/texturas/marmol_small.png");
 		    background-position: center center;
     		#parrafo {
-    			width: 50%;
-		    	padding-bottom: 180px;
+    			order: 2;
+    			width: 99%;
+		    	padding-bottom: 8rem;
 			    #titulo {
     				margin: 0;
     				p {
     					text-align: left;
-    					margin: 40px 0 50px 110px;
+    					margin: 2.45rem 0 3.1rem 6.2rem;
     				}
     				&:before {
     					height: 80%;
@@ -32,28 +28,24 @@ ul.lista_derecha {
     			}
     			#texto {
 				    display: none;
-				    margin: -30px 30px 40px 70px;
+				    margin: 0px 2rem 50px;
 				    font-weight: 300;
 				    font-style: italic;
 				    font-size: 1.25rem;
 				    hr {
-					    margin-top: 40px;
-					    width: 60px;
-					    height: 4px;
-					    margin-left: 0px;
+					    margin-top: 2.45rem;
+					    width: 3.75rem;
+					    height: 0.25rem;
+					    margin-left: 0;
 					    background-color: $gris_centros;
 				    }
     			}
     		}
     		#pattern_logo {
-    			width: 50%;
+    			order: 1;
+    			width: 100%;
     			height: inherit;
-    			#pattern {
-    				width: 100%;
-    				height: 20%;
-    				background       : url('../images/pattern.png');
-    				background-repeat: repeat;
-    			}
+    			#pattern-1 {}
     			#svg_logo {
 				    display: flex;
 				    height: 80%;
@@ -64,6 +56,23 @@ ul.lista_derecha {
     				}
     			}
     		}
+		    @media screen and (min-width: $ipad_mediaquery) {
+		        flex-direction: row;
+		        #parrafo {
+		        	order: 1;
+		        	width: 50%;
+		        	#texto {
+				    	margin: -1.875rem 1.875rem 2.45rem 4.4rem;
+		        	}
+		        }
+		        #pattern_logo {
+		        	order: 2;
+    				width: 50%;
+	    			#pattern-1 {
+	    				display: inline-block;
+	    			}
+		        }
+		    }
     	}
     }
 
@@ -72,36 +81,74 @@ ul.lista_derecha {
         max-width       : 1280px;
         height          : 100%;
         text-align      : left;
-        margin: -200px 0 0 0;
-        #cirugias_title {
-		    p {
-			    margin-right: 10px;
-			}
-        }
-        .titulo_cirugias {
-        	width: 45%;
-    		margin-left: 15%;
-        	vertical-align: bottom;
-        	margin-bottom: 20px;
-        	&:before {
-        		top: 63%;
-    			height: 80%;
-    		    left: 17.5%;
-        	}
-        	&:hover { &:before { left: 85%; }}
-        }
+        margin: -14.25rem 0 0 0;
         .imagen {
         	width: 39%;
+        	padding-top: 2.6875rem;
+        	img {
+		        width: 15rem;
+			    @media screen and (min-width: $ipad_mediaquery) {
+			        width: 25rem;
+			    }
+			    @media screen and (min-width: $max_ipad_mediaquery) {
+			        width: 29.25rem;
+			    }
+        	}
+        }
+        #cirugias_title {
+        	width: 100%;
+        	vertical-align: bottom;
+			//border-top : 0.375rem solid $color-vascular-rojo;
+		    @media screen and (min-width: $ipad_mediaquery) {
+		        width: 60%;
+				border-top : none;
+		    }
+		    &:before {
+        		top     : 54%;
+        		height  : 40%;
+        		left 	: 1rem;
+			    @media screen and (min-width: $ipad_mediaquery) {
+		        	height  : 60%;
+        			top     : 40%;
+        			left	: 11rem;
+			    }
+			    @media screen and (min-width: $max_ipad_mediaquery) {
+        			top     : 40%;
+			        left: 17rem;
+			    }
+        	}
+        	&:hover {
+        		&:before {
+        			left: 95%;
+				    @media screen and (min-width: $max_ipad_mediaquery) {
+				        left: 100%;
+				    }
+        		}
+        	}
         }
         div {
             display       : inline-block;
             height        : 100%;
             margin: 0;
-            p { margin: 0;}
+            p {
+				text-align: left;
+				margin-left: 10%;
+			    @media screen and (min-width: $ipad_mediaquery) {
+			        text-align: right;
+            		margin: 0 6.25rem 1rem 0;
+			    }
+			    @media screen and (min-width: $max_ipad_mediaquery) {
+			        margin-right: 11rem;
+			        margin-bottom: 3rem;
+			    }
+			}
         }
         img {
             vertical-align: middle;
         }
+	    @media screen and (min-width: $max_ipad_mediaquery) {
+	        margin-top: -10.9375rem;
+	    }
 	}
     #cirugias_hidden {
     	display: none;
@@ -109,21 +156,64 @@ ul.lista_derecha {
 	    .contenido_cirugias {
 	    	display: flex;
 	    	position: relative;
+	    	flex-direction: column;
 	    	width: 100%;
-			padding: 70px 0;
+			padding: 0;
+		    @media screen and (min-width: $ipad_mediaquery) {
+		    	padding: 4.4rem 0;
+		    }
 			#que_es_vascular {
+				padding-bottom: 1.25rem;
 				margin-top: 0;
-				width: 49%;
+				width: 100%;
+				color: white;
+				background-color: $color-vascular-rojo;
+				span {
+					color: white;
+				}
+			    @media screen and (max-width: $ipad_mediaquery) {
+			    	margin-bottom: 0;
+			    }
+			    @media screen and (min-width: $ipad_mediaquery) {
+			    	padding-bottom: 0;
+			    	width: 49%;
+			    	color: $gris_centros;
+					background-color: white;
+					span {
+						color: $gris_centros;
+					}
+			    }
 				p {
-					margin-top: 0;
-					margin-left: 70px;
+					font-size: 2rem;
+    				display: block;
+					margin-top: 3rem;
+					margin-left: 4.4rem;
+				    @media screen and (min-width: $ipad_mediaquery) {
+				    	font-size: 2.2rem;
+				    	display: inline-block;
+				    	width: 60%;
+				    }
+				    @media screen and (min-width: $max_ipad_mediaquery) {
+				    	width: initial;
+						margin-top: 0;
+						margin-left: -2.45rem;
+				    }
 				}
 				&:before {
-					top: 26.5%;
+					top: 45%;
+					left: 3rem;
+					background: white;
+				    @media screen and (min-width: $ipad_mediaquery) {
+						top: 28%;
+						height: 35%;
+						left: 3rem;
+						background: $color-vascular-rojo;
+				    }
+				    @media screen and (min-width: $max_ipad_mediaquery) {
+				    	top: 19.5%;
+						left: 4.4rem;
+				    }
 				}
-			}
-			#descripcion_vascular {
-				width: 49%;
 			}
 			#isotipo_cirugias {
 				float: left;
@@ -137,107 +227,243 @@ ul.lista_derecha {
 			}
 			.descripcion_cirugias {
 			    float: left;
-			    width: 49%;
+			    width: 100vw;
 				ul {
+					padding: 0 2.45rem;
 					margin: 0;
 					font-weight: 400;
 					font-style : normal;
-					font-size: 1.3rem;
+					font-size: 0.9rem;
+				}
+				.lista_izquierda {
+					display: none;
+				}
+				#only_mobile {
+					div {
+						background-color: $color-vascular-rojo;
+						overflow: auto;
+						img {
+							width: 49%;
+						    display: inline-block;
+						    float: left;
+					        margin-top: -1rem;
+						}
+						ul {
+							width: 49%;
+						    display: inline-block;
+							color: white;
+							padding: 2.45rem 0 0 0 !important;
+						}
+					}
+					@media screen and (min-width: $ipad_mediaquery) {
+						display: none;
+					}
 				}
 			}
 			.descripcion_cirugias_right {
 			    float: right;
 			}
+		    @media screen and (min-width: $ipad_mediaquery) {
+		        flex-direction: row;
+				.descripcion_cirugias {
+				    float: left;
+				    width: 49%;
+					ul {
+						padding-right: 0;
+						font-size: 1.3rem;
+					}
+				}
+		    }
 	    }
 		#lista_cirugias {
 			margin: 0;
+			#lista-bckgrnd-chng {
+				background-color: $color-vascular-rojo;
+				color: white;
+				@media screen and (min-width: $ipad_mediaquery) {
+					background-color: transparent;
+					color: black;
+					padding: 0;
+				}
+			}
+			@media screen and (max-width: $ipad_mediaquery) {
+				padding: 0;
+			}
 		}
 	    #contenido_imagen_header {
-	    	background-color: $color-vascular-rojo;
-	    	color 			: white;
-	    	padding 		: 35px 0;
+	    	background-color: white;
+	    	color 			: $gris_centros;
+	    	padding 		: 2.2rem 0;
 	    	display: flex;
 	    	position: relative;
 	    	#img_cirugias_2 {
+	    		display: none;
 	    		float  : left;
 	    		width  : 50%;
     		    margin : -345px 0 -40px 0;
 	    	}
 	    	#nervioso_central {
 	    		float: right;
-	    		width: 49%;
+	    		width: 100%;
 	    		height: 100%;
 				margin: 0;
-				#title_nervioso {    
-					margin-left: 30px;
-   					margin-right: 70px;
-   					margin-bottom: 0;
+				#title_nervioso {
+					margin: 0 0 0 15%;
+				    text-align: left;
 					vertical-align: middle;
-					color: white;
+					color: $gris_centros;
+					font-size: 2rem;
 					span {
-						color: white;
+						color: $gris_centros;
 					}
 					img {
-						margin-left: 40%;
-					    left: 0;
+						margin-left: 30%;
+						margin-top: 7.5%;
 					    transform: translate(0, 0);
 					}
 				}
 				&:before {
-					background: white;
-					left: 0px;
-					top: 52%;
-					height: 48%;
+					background: $color-vascular-rojo;
+					left: 7.5%;
+				    top: 40%;
+				    height: 70%;
 				}
 	    	}
 	    	div.imagen {
 	    		margin-bottom: -5px;
 	    	}
+			@media screen and (min-width: $ipad_mediaquery) {
+		    	background-color: $color-vascular-rojo;
+		    	color 			: white;
+		    	#img_cirugias_2 {
+		    		display: block;
+		    	}
+		    	#nervioso_central {
+		    		width: 49%;
+	    			&:before {
+						background: white;
+						left: 0;
+						top: 44%;
+	    			}
+		    		#title_nervioso {
+		    			margin-left: 30px;
+   						margin-right: 4.4rem;
+		    			color: white;
+		    			font-size: 2.2rem;
+		    			span {
+		    				color: white;
+		    			}
+						img {
+							margin-left: 40%;
+							margin-top: 0;
+						    left: 0;
+						    transform: translate(0, 0);
+						}
+		    		}
+		    	}
+			}
+			@media screen and (min-width: $max_ipad_mediaquery) {
+		    	#nervioso_central {
+	    			&:before {
+	    				top: 40%;
+	    			}
+	    		}
+			}
 	    }
 	}
-	#contenido_down_vascular {
-		border-top: 6px solid $color-vascular-rojo;
+	#contenido_isotipo_vascular-1 {
+		display: block;
+		height: 15rem;
 		width: 100%;
-		height: 473px;
-		#contenido_left {
+		border-top: 6px solid $color-vascular-rojo;
+	    background-image: url("../images/vascular/isotipo_vascular.png");
+	    background-position: center center;
+		background-repeat: no-repeat;
+	    background-size: 30%;
+		@media screen and (min-width: $ipad_mediaquery) {
+			display: none;
+		}
+	}
+	#contenido_down_vascular {
+		position: relative;
+		border-top: none;
+		width: 100%;
+		height: 20rem;
+		#contenido_isotipo_vascular-2 {
+			display: none;
+			position: absolute;
+			top: 0;
 			float: left;
-		    width: 50%;
+			height: 50%;
+			width: 50%;
+		    background-image: url("../images/vascular/isotipo_vascular.png");
+		    background-position: center center;
+			background-repeat: no-repeat;
+		    background-size: 25%;
+			@media screen and (min-width: $ipad_mediaquery) {
+				display: block;
+    		}
+			@media screen and (min-width: $max_ipad_mediaquery) {
+				background-size: 17.5%;
+    		}
+		}
+		#contenido_contacto {
+			position: absolute;
+    		bottom: 0;
+			float: left;
+			height: initial;
+		    width: 100%;
 		    margin: 0;
-			#contenido_isotipo_vascular {
-				height: 290px;
-			    background-image: url("../images/vascular/isotipo_vascular.png");
-			    background-position: center center;
-    			background-repeat: no-repeat;
+		    &:before {
+				@media screen and (max-width: ($ipad_mediaquery) - 1px) {
+					left: 1rem;
+	    		}
+		    }
+			p {
+				text-align: left;
+    			margin: 1.25rem 10%;
+				@media screen and (max-width: ($ipad_mediaquery) - 1px) {
+					font-size: 2.5rem;
+	    		}
 			}
-			#contenido_contacto {
-				margin: 0;
+		    @media screen and (min-width: $ipad_mediaquery) {
+		        width: 50%;
+				height: 50%;
 				p {
-					margin: 0;
-				    padding-top: 42px;
-    				padding-bottom: 41px;
-    				text-align: left;
-    				margin-left: 110px;
+					text-align: center;
+					margin: 3.125rem 0;
 				}
-			}
+		    }
+		    @media screen and (min-width: $max_ipad_mediaquery) {
+				p {
+					margin: 1.95rem 0;
+				}
+		    }
 		}
 		#imagen_procedimiento {
 			float: right;
-		    width: 50%;
-		    height: 100%;
+		    width: 100%;
+		    height: 99%;
 			background-image: url("../images/vascular/cirugias_vascular.png");
 		    background-position: center center;
 		    background-size    : cover;
+		    @media screen and (min-width: $ipad_mediaquery) {
+		        width: 50%;
+		    	height: 100%;
+		    }
+		}
+	    @media screen and (min-width: $ipad_mediaquery) {
+			border-top: 6px solid $color-vascular-rojo;
 		}
 	}
 }
-
 .title_vascular{
 	p.italic {
 		display: inline-block;
 	    margin-left: 100px;
 	    text-align: left;
 	    font-family: Aspira;
-		font-size: 3.125rem;
+		font-size: 2.2rem;
 		font-weight: 300;
 		font-style : italic;
 	}
@@ -245,6 +471,22 @@ ul.lista_derecha {
 		margin-left: 30px;
 	    left: 50%;
 	    transform: translate(-50%, -50%);
+	    &.uno {
+	    	display: block;
+	    	margin: 0 auto 0 50%;
+	    	@media screen and (min-width: $ipad_mediaquery) {
+	    		display: none;
+	    	}
+	    }
+	    &.dos {
+	    	display: none;
+	    	@media screen and (min-width: $ipad_mediaquery) {
+	    		display: inline;
+	    	}
+	    	@media screen and (min-width: $max_ipad_mediaquery) {
+	    		transform: translate(-50%, -25%);
+	    	}
+	    }
 	}
 	span {
 		color: rgba(94, 94, 94, 1);
@@ -259,4 +501,16 @@ ul.lista_derecha {
 			left: 95%;
 		}
 	}
+}
+@media screen and (min-width: $ipad_mediaquery) {
+	ul.lista_izquierda {
+		display: block !important;
+	    margin-left: 4.4rem !important;
+	}
+	ul.lista_derecha {
+	    margin-right: 4.4rem !important;
+	}
+}
+@media screen and (max-width: $ipad_mediaquery) {
+	ul {padding: 2.45rem !important;}
 }

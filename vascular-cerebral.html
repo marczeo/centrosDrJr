@@ -37,6 +37,7 @@
         <div class="upper-side">              <!-- Primera línea -->
             <div class="centro-color color-fondo-vascular-rojo no-select">
                 <span ></span>
+                <img src="images/vascular/isotipo_vascular.png" alt="" />
                 <img src="images/vascular/isotipo_vascular_blanco.png" alt="" />
             </div>
             <div class="centro-titulo no-select">
@@ -62,7 +63,7 @@
         <div id="contenido_up">
             <div id="que_es">
                 <div id="parrafo">
-                    <div id="titulo" class="title title_vascular" onclick="slide_section('texto');"><p>¿Qué es?</p></div>
+                    <div id="titulo" class="title title-cefaleas-vascular title_vascular" onclick="slide_section('texto');"><p>¿Qué es?</p></div>
                     <div id="texto">
                         Estos centros se encargan de las <b>intervenciones quirúrgicas a nivel craneal</b>, es decir, se enfocan al tratamiento integral de la hemorragia subarácnoidea y de ruptura secundaria. Desde Meningiomas, Adenomas Hipofisiarios y Gliomas, hasta Aneurismas de Circulación Anterior, Tumoraciones de Fosas, Neuromas y Ependimomas. Cada cirugía es de invasión mínima y trata las dolencias cerebrales y traumas severos de índole superficial. Esto se entiende como un tratamiento hacia la hidrocefalia y vasoespasmo cerebral que se reduce mediante el clipaje del aneurisma en cirugía temprana o ultra asociada a terapia de Hipertensión y Hemodilución.
                         <br><br>
@@ -79,24 +80,24 @@
                             />
                         </svg>
                     </div>
-                    <div id="pattern"> </div>
+                    <div id="pattern-1" class="pattern-cefaleas-vascular"> </div>
                 </div>
             </div>
             <div class="imagen_procedimiento_header">
                 <div class="imagen"><img src="images/vascular/que_es_vascular.png" alt="" /></div>
-                <div id="cirugias_title" class="titulo_cirugias title title_vascular" onclick="slide_section('cirugias_hidden');"><p>Cirugías</p></div>
+                <div id="cirugias_title" class="title title-cefaleas-vascular title_vascular" onclick="slide_section('cirugias_hidden');"><p>Cirugías</p></div>
             </div>
         </div>
 
         <div id="cirugias_hidden">
-
             <div class="contenido_cirugias" >
-                <div id="que_es_vascular" class="descripcion_cirugias title title_vascular">
+                <div id="que_es_vascular" class="descripcion_cirugias title title-cefaleas-vascular title_vascular">
                     <p id="que_es_cerebral" class="italic">
-                        ¿Qué es?<br>
+                        Cirugía<br>
                         <span>Vascular Cerebral</span>
                     </p>
-                    <img src="images/neurocirugia/flecha_d.png" alt="" />
+                    <img class="uno" src="images/flecha_abajo.png" alt="" />
+                    <img class="dos" src="images/neurocirugia/flecha_d.png" alt="" />
                 </div>
                 <div id="descripcion_vascular" class="descripcion_cirugias descripcion_cirugias_right">
                     <ul class="lista_derecha">
@@ -116,7 +117,7 @@
                 <div id="img_cirugias_2" class="imagen">
                     <img src="images/vascular/cirugias_vascular_2.png" alt="" />
                 </div>
-                <div id="nervioso_central" class="descripcion_cirugias descripcion_cirugias_right title title_vascular">
+                <div id="nervioso_central" class="descripcion_cirugias descripcion_cirugias_right title title-cefaleas-vascular title_vascular">
                     <p id="title_nervioso" class="italic">
                         Cirugía Vascular<br>
                         <span>del Sistema Nervioso Central</span><br>
@@ -154,8 +155,27 @@
                         <li>Aneurismas de arteria cerebral anterior distal </li>
                         <li>Aneurismas de arteria cerberal media </li>
                     </ul>
+                    <div id="only_mobile">
+                        <div>
+                            <img src="images/vascular/cirugias_vascular_2.png" >
+                            <ul id="lista_roja">
+                                <li>Lesiones carotídeas no ateroescleróticas </li>
+                                <li>Enfermedad de moya-moya </li>
+                                <li>Hemorragia parenquimatosa secundaria a hipertensión arterial </li>
+                                <li>Hemorragia subaracnoideo secundaria a ruptura de aneurismas </li>
+                                <li>Vasoespasmo cerebral </li>
+                            </ul>
+                        </div>
+                        <ul id="lista_blanca">
+                            <li>Tratamiento quirúrgico de aneurismas de circulación anterior </li>
+                            <li>Tratamiento quirúrgico de aneurismas intracavernosos y paraclinoideos </li>
+                            <li>Aneurismas de arteria cerebral anterior y comunicante anterior </li>
+                            <li>Aneurismas de arteria cerebral anterior distal </li>
+                            <li>Aneurismas de arteria cerberal media </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="descripcion_cirugias descripcion_cirugias_right">
+                <div id="lista-bckgrnd-chng" class="descripcion_cirugias descripcion_cirugias_right">
                     <ul class="lista_derecha">
                         <li>Abordajes quirúrgicos a aneurismas de la ciruclación posterior </li>
                         <li>Aneurismas de de la unión vertebrobasilar, arteria vertebral y arteria cerebelosa posteroinferior </li>
@@ -171,15 +191,13 @@
                 </div>
             </div>
         </div>
-
+        <div id="contenido_isotipo_vascular-1" > </div>
         <div id="contenido_down_vascular" >
-            <div id="contenido_left">
-                <div id="contenido_isotipo_vascular" > </div>
-                <div id="contenido_contacto" class="isotipo title title_vascular color-fondo-vascular-gris" >
-                    <p>
-                        Contacto
-                    </p>
-                </div>
+            <div id="contenido_isotipo_vascular-2" > </div>
+            <div id="contenido_contacto" class="title title-cefaleas-vascular title_vascular color-fondo-vascular-gris" >
+                <p>
+                    Contacto
+                </p>
             </div>
             <div id="imagen_procedimiento" ></div>
         </div>
