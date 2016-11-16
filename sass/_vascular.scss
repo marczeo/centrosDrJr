@@ -189,13 +189,14 @@
 					margin-top: 3rem;
 					margin-left: 4.4rem;
 				    @media screen and (min-width: $ipad_mediaquery) {
-				    	font-size: 3.125rem;
+				    	font-size: 2.2rem;
 				    	display: inline-block;
 				    	width: 60%;
 				    }
 				    @media screen and (min-width: $max_ipad_mediaquery) {
 				    	width: initial;
 						margin-top: 0;
+						margin-left: -2.45rem;
 				    }
 				}
 				&:before {
@@ -203,12 +204,13 @@
 					left: 3rem;
 					background: white;
 				    @media screen and (min-width: $ipad_mediaquery) {
-						top: 33.5%;
+						top: 28%;
+						height: 35%;
 						left: 3rem;
 						background: $color-vascular-rojo;
 				    }
 				    @media screen and (min-width: $max_ipad_mediaquery) {
-				    	top: 26.5%;
+				    	top: 19.5%;
 						left: 4.4rem;
 				    }
 				}
@@ -232,6 +234,30 @@
 					font-weight: 400;
 					font-style : normal;
 					font-size: 0.9rem;
+				}
+				.lista_izquierda {
+					display: none;
+				}
+				#only_mobile {
+					div {
+						background-color: $color-vascular-rojo;
+						overflow: auto;
+						img {
+							width: 49%;
+						    display: inline-block;
+						    float: left;
+					        margin-top: -1rem;
+						}
+						ul {
+							width: 49%;
+						    display: inline-block;
+							color: white;
+							padding: 2.45rem 0 0 0 !important;
+						}
+					}
+					@media screen and (min-width: $ipad_mediaquery) {
+						display: none;
+					}
 				}
 			}
 			.descripcion_cirugias_right {
@@ -314,19 +340,18 @@
 		    	}
 		    	#nervioso_central {
 		    		width: 49%;
+	    			&:before {
+						background: white;
+						left: 0;
+						top: 44%;
+	    			}
 		    		#title_nervioso {
 		    			margin-left: 30px;
    						margin-right: 4.4rem;
 		    			color: white;
-		    			font-size: 3.125rem;
+		    			font-size: 2.2rem;
 		    			span {
 		    				color: white;
-		    			}
-		    			&:before {
-							background: white;
-							left: 0;
-							top: 52%;
-							height: 48%;
 		    			}
 						img {
 							margin-left: 40%;
@@ -336,6 +361,13 @@
 						}
 		    		}
 		    	}
+			}
+			@media screen and (min-width: $max_ipad_mediaquery) {
+		    	#nervioso_central {
+	    			&:before {
+	    				top: 40%;
+	    			}
+	    		}
 			}
 	    }
 	}
@@ -431,7 +463,7 @@
 	    margin-left: 100px;
 	    text-align: left;
 	    font-family: Aspira;
-		font-size: 3.125rem;
+		font-size: 2.2rem;
 		font-weight: 300;
 		font-style : italic;
 	}
@@ -451,6 +483,9 @@
 	    	@media screen and (min-width: $ipad_mediaquery) {
 	    		display: inline;
 	    	}
+	    	@media screen and (min-width: $max_ipad_mediaquery) {
+	    		transform: translate(-50%, -25%);
+	    	}
 	    }
 	}
 	span {
@@ -469,6 +504,7 @@
 }
 @media screen and (min-width: $ipad_mediaquery) {
 	ul.lista_izquierda {
+		display: block !important;
 	    margin-left: 4.4rem !important;
 	}
 	ul.lista_derecha {
