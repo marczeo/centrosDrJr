@@ -6,6 +6,9 @@ div.hero-banner {
     width              : 100%;
     max-width          : 1280px;
     height             : 100%;
+    @media screen and (max-width: $max_ipad_mediaquery) {
+                height : 50%;
+            }
     div.upper-side {
         width      : 100%;
         height     : 100%;
