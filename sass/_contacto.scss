@@ -40,6 +40,9 @@
     @media screen and (max-width: $ipad_mediaquery - 1) {
         line-height: 1.7;
     }
+    @media screen and (max-width: $max_mobile_mediaquery) {
+        font-size: 1.1rem;
+    }
     i,
     p {
         margin: 10px 3%;
@@ -56,6 +59,9 @@
         }
         @media screen and (max-width: $ipad_mediaquery - 1) {
             margin-top: 50px;
+        }
+        @media screen and (max-width: $max_mobile_mediaquery) {
+            height: 190px;
         }
         object {
             width  : 25%;
@@ -102,12 +108,18 @@
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
             font-size: 1.1rem;
         }
+         @media screen and (max-width: $max_mobile_mediaquery){
+            font-size: 1.1rem;
+        }
     }
     .golden_medium {
         font-family: Aspira;
         font-size  : 20pt;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
             font-size: 1.5rem;
+        }
+        @media screen and (max-width: $max_mobile_mediaquery) {
+            font-size: 15pt;
         }
     }
     .reacomodo {
@@ -221,6 +233,12 @@ p.italico {
             letter-spacing: 2px;
             font-size     : 2.5vw;
         }
+        @media screen and (max-width: $max_mobile_mediaquery) {
+            height        : 56px;
+            width         : 30%;
+            letter-spacing: 2px;
+            font-size     : 2.5vw;
+        }
     }
     .label {
         background-color: #FFFFFF;
@@ -286,6 +304,9 @@ footer {
         @media screen and (min-width: $over_mediaquery) {
             left : 31%;
         }
+        @media screen and (max-width: $max_mobile_mediaquery) {
+            font-size: 2.9vw;
+        }
         .font_change {
             font-family   : 'Aspira Light';
             font-size     : 12pt;
@@ -299,12 +320,20 @@ footer {
                 font-size  : 2.9vw;
                 margin-left: 11%;
             }
+            @media screen and (max-width: $max_mobile_mediaquery) {
+                font-size: 0.5rem;
+                margin-left: 10%;
+            }
         }
         .firma {
             @media screen and (max-width: $ipad_mediaquery - 1) {
                 font-size  : 2.9vw;
                 margin-left: 11%;
-            }
+            }     
+            @media screen and (max-width: $max_mobile_mediaquery) {
+                font-size: 0.5rem;
+                margin-left: 10%;
+            }       
         }
     }
 }
@@ -354,6 +383,12 @@ footer {
         margin-left   : 70px;
         letter-spacing: 1px;
     }
+    @media screen and (max-width: $max_mobile_mediaquery) {
+        font-size: 12px;
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: left;
+    }
 }
 .logo_cc {
     float      : right;
@@ -370,6 +405,9 @@ footer {
         margin-top : 18px;
         float      : none;
         margin-left: 0;
+    }
+    @media screen and (max-width: $max_mobile_mediaquery) {
+        text-align: center;
     }
 }
 .contacto{
