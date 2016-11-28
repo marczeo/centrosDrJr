@@ -20,15 +20,15 @@
 				-webkit-filter: brightness(0) invert(1);
 			    filter: brightness(0) invert(1);
 			    -moz-filter: brightness(0) invert(1);
-			    cursor: pointer;
-			    @media (max-width: $max_mobile_mediaquery){
-					margin-left: 25px;
-					margin-top: 10px;
-			    	margin-bottom: 10px;
-				}
+			    cursor: pointer;			    
 				@media (max-width: $max_ipad_mediaquery)
 				{
 					margin-left: 95px;
+				}
+				@media (max-width: $max_mobile_mediaquery){
+					margin-left: 25px;
+					margin-top: 10px;
+			    	margin-bottom: 10px;
 				}
 			}
 		}
