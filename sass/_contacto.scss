@@ -54,15 +54,11 @@
         width        : 90%;
         float        : right;
         margin-bottom: 30px;
-        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-            height: 150px;
-        }
+        
         @media screen and (max-width: $ipad_mediaquery - 1) {
             margin-top: 50px;
         }
-        @media screen and (max-width: $max_mobile_mediaquery) {
-            height: 190px;
-        }
+        
         object {
             width  : 25%;
             margin : auto;
@@ -70,9 +66,17 @@
             @media screen and (max-width: $ipad_mediaquery - 1) {
                 width: 40%;
             }
+            @media screen and(max-width: 640px)
+            {
+                width: 25%
+            }
         }
         @media screen and (max-width: $ipad_mediaquery - 1) {
             height: 390px;
+        }        
+
+        @media screen and (max-width: $max_mobile_mediaquery) {
+            height: 190px;
         }
     }
     .banner_logo_ocre {

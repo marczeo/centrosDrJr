@@ -570,13 +570,25 @@
 			    width: 7px;
 			    height: 67%;
 				background: #FFFFFF;
-				transition:ease 1s;
+				transition:ease 1s;				
 			}
 			&:hover{
 				&:before{
-					left:80%;
+					left:80%;					
 				}
 			}
+			@media screen and(max-width: 768px)
+			{
+				&:before{
+					left: 10px;
+				}
+				&:hover{
+					&:before
+					{
+						left: 96%;
+					}
+				}
+			}			
 		}
 	}
 	@media (max-width: $max_mobile_mediaquery)
@@ -624,6 +636,33 @@
 			&:hover{
 				&:before{
 					left:80%;
+				}
+			}
+			@media screen and(max-width: 640px)
+			{
+				&:hover{
+					&:before
+					{
+						left: 35%;
+					}
+				}
+			}
+			@media screen and(max-width: 480px)
+			{
+				&:hover{
+					&:before
+					{
+						left: 60%;
+					}
+				}
+			}
+			@media screen and(max-width: 320px)
+			{
+				&:hover{
+					&:before
+					{
+						left: 80%;
+					}
 				}
 			}
 		}
