@@ -588,90 +588,62 @@
 						left: 96%;
 					}
 				}
-			}			
+			}
 		}
 	}
-	@media (max-width: $max_mobile_mediaquery)
-    {
-    	display : none;
-    }
-}
-.contacto-movil{
-	width: 100%;
-	max-width: 1280px;
-	margin : auto;
-	.title-background-50{
-		width: 100%;
-		max-width: 1280px;
-		/*background-color: rgba(217, 229, 131, 1);*/
-		padding-bottom: 30px;
-    	padding-top: 30px;
-		.title-white{
-			text-align: center;
-			position: relative;
-			font-family: Big Caslon Medium;
-			font-size: 60pt;
-			color: #FFFFFF;
-			@media (max-width: $max_mobile_mediaquery)
-    		{
-    			margin-left: 2.5rem;
+	@media screen and (max-width: 640px)
+	{
+		position: relative;
+		top: -5px;
+		.title-background-50
+		{
+			width: 100%;
+			.title-white{
+				margin-left: 2.5rem;
     			text-align: left;
     			font-size: 2.5rem;
-    		}
-			&:before{
-				content: "";
-			    position: absolute;
-			    left : 135px;
-			    top: 50%;
-			    transform: translateY(-50%);
-			    width: 3px;
-			    height: 67%;
-				background: #FFFFFF;
-				transition:ease 1s;
-	            @media (max-width: $max_mobile_mediaquery)
-	    		{
-	    			left: -4vw;
-	    		}
-			}
-			&:hover{
-				&:before{
-					left:80%;
-				}
-			}
-			@media screen and(max-width: 640px)
-			{
+    			padding-left: 10px;
+    			&:before{
+    				width: 3px;
+    				left: 0px;
+    			}
 				&:hover{
 					&:before
 					{
-						left: 35%;
-					}
-				}
-			}
-			@media screen and(max-width: 480px)
-			{
-				&:hover{
-					&:before
-					{
-						left: 60%;
-					}
-				}
-			}
-			@media screen and(max-width: 320px)
-			{
-				&:hover{
-					&:before
-					{
-						left: 80%;
+						left: 170px;
 					}
 				}
 			}
 		}
 	}
-	@media (max-width: $max_mobile_mediaquery)
-    {
-    	display : block !important;
-    }
+	@media screen and(max-width: 480px)
+	{
+		.title-background-50{
+			.title-white{
+				&:hover{
+					&:before
+					{
+						left: 170px;
+					}
+				}
+			}
+		}
+	}
+	@media screen and(max-width: 320px)
+	{
+		.title-background-50{
+			.title-white{
+				&:hover{
+					&:before{
+						left: 165px;
+					}
+				}
+			}
+		}
+	}
 }
+
+
 .pattern
 {
 	background       : url('../images/pattern.png');
