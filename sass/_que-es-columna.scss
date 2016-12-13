@@ -548,39 +548,102 @@
 	width: 100%;
 	max-width: 1280px;
 	margin : auto;
-.title-background-50{
-	float: right;
-			width: 50%;
-			max-width: 1280px;
-			background-color: $color-columna-azul;
-			padding-bottom: 30px;
-    		padding-top: 30px;
-			.title-white{
+	.title-background-50{
+		float: right;
+		width: 50%;
+		max-width: 1280px;
+		background-color: $color-columna-azul;
+		padding-bottom: 30px;
+	    padding-top: 30px;
+		.title-white{
 			text-align: center;
-				position: relative;
-				font-family: Big Caslon Medium;
-				font-size: 60pt;
-				color: #FFFFFF;
-
+			position: relative;
+			font-family: Big Caslon Medium;
+			font-size: 60pt;
+			color: #FFFFFF;
+			&:before{
+				content: "";
+			    position: absolute;
+			    left : 135px;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    width: 7px;
+			    height: 67%;
+				background: #FFFFFF;
+				transition:ease 1s;				
+			}
+			&:hover{
 				&:before{
-						content: "";
-					    position: absolute;
-					    left : 135px;
-					    top: 50%;
-					    transform: translateY(-50%);
-					    width: 7px;
-					    height: 67%;
-						background: #FFFFFF;
-						transition:ease 1s;
-					}
+					left:80%;					
+				}
+			}
+			@media screen and(max-width: 768px)
+			{
+				&:before{
+					left: 10px;
+				}
 				&:hover{
-					&:before{
-						left:80%;
+					&:before
+					{
+						left: 96%;
 					}
 				}
-		}
+			}
 		}
 	}
+	@media screen and (max-width: 640px)
+	{
+		position: relative;
+		top: -5px;
+		.title-background-50
+		{
+			width: 100%;
+			.title-white{
+				margin-left: 2.5rem;
+    			text-align: left;
+    			font-size: 2.5rem;
+    			padding-left: 10px;
+    			&:before{
+    				width: 3px;
+    				left: 0px;
+    			}
+				&:hover{
+					&:before
+					{
+						left: 170px;
+					}
+				}
+			}
+		}
+	}
+	@media screen and(max-width: 480px)
+	{
+		.title-background-50{
+			.title-white{
+				&:hover{
+					&:before
+					{
+						left: 170px;
+					}
+				}
+			}
+		}
+	}
+	@media screen and(max-width: 320px)
+	{
+		.title-background-50{
+			.title-white{
+				&:hover{
+					&:before{
+						left: 165px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
 .pattern
 {
 	background       : url('../images/pattern.png');
