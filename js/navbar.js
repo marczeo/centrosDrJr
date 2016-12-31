@@ -19,7 +19,7 @@ jQuery(document).ready(function(){
 			else{
 				if($('.navbar-options').is(":hidden"))
 				{
-					navDiv.css('width', '30%');
+					navDiv.css('width', '100px');
 				}
 				else{
 					navDiv.css('width', '50%');
@@ -29,7 +29,7 @@ jQuery(document).ready(function(){
 			else{
 				if($('.navbar-options').is(":hidden"))
 				{
-					navDiv.css('width', '30%');
+					navDiv.css('width', '100px');
 				}
 				else{
 					navDiv.css('width', '50%');

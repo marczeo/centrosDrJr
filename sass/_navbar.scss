@@ -23,7 +23,9 @@
 			    cursor: pointer;			    
 				@media (max-width: $max_ipad_mediaquery)
 				{
-					margin-left: 95px;
+					margin-left: 25px;
+					margin-top: 10px;
+			    	margin-bottom: 10px;
 				}
 				@media (max-width: $max_mobile_mediaquery){
 					margin-left: 25px;
@@ -63,12 +65,12 @@
 		}
 		@media (max-width: $max_mobile_mediaquery){
 			top:60px;
-			width: 30%;
+			width: 100px;
 		}
 		@media (max-width: $max_ipad_mediaquery)
 		{
 			top: 60px;
-			width: 30%;
+			width: 100px;
 		}
 	}
 	@media (max-width: $max_mobile_mediaquery){
