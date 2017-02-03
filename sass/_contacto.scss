@@ -269,6 +269,10 @@ p.italico {
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
             font-size: 0.6rem;
         }
+        @media screen and (max-width: $max_mobile_mediaquery){
+            font-size: 0.6rem;
+            padding: 20px 5px;
+        }
     }
     [placeholder]:focus::-webkit-input-placeholder {
         transition: 0s;
